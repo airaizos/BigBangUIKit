@@ -13,6 +13,7 @@
 		3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BA29D4526C00C11B7A /* Main.storyboard */; };
 		3A5305BE29D4526D00C11B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BD29D4526D00C11B7A /* Assets.xcassets */; };
 		3A5305C129D4526D00C11B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BF29D4526D00C11B7A /* LaunchScreen.storyboard */; };
+		3A5305CA29D452B200C11B7A /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305C929D452B200C11B7A /* BigBang.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3A5305BD29D4526D00C11B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A5305C029D4526D00C11B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5305C229D4526D00C11B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5305C929D452B200C11B7A /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BigBang.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3A5305B329D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3A5305C829D452A700C11B7A /* Helpers */,
 				3A5305B429D4526C00C11B7A /* AppDelegate.swift */,
 				3A5305B629D4526C00C11B7A /* SceneDelegate.swift */,
 				3A5305B829D4526C00C11B7A /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				3A5305C229D4526D00C11B7A /* Info.plist */,
 			);
 			path = AdrianIraizos_BigBangUIKit;
+			sourceTree = "<group>";
+		};
+		3A5305C829D452A700C11B7A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A5305C929D452B200C11B7A /* BigBang.json */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +138,7 @@
 			files = (
 				3A5305C129D4526D00C11B7A /* LaunchScreen.storyboard in Resources */,
 				3A5305BE29D4526D00C11B7A /* Assets.xcassets in Resources */,
+				3A5305CA29D452B200C11B7A /* BigBang.json in Resources */,
 				3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
