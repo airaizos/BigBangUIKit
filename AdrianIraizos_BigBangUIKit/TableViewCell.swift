@@ -1,0 +1,23 @@
+//
+//  TableViewCell.swift
+//  AdrianIraizos_BigBangUIKit
+//
+//  Created by Adrian Iraizos Mendoza on 29/3/23.
+//
+
+import UIKit
+
+class TableViewCell: UITableViewCell {
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}
