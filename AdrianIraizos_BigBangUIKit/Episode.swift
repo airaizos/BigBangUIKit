@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Episode:Codable {
-    
+struct Episode:Hashable, Codable {
     let id:Int
     let url:URL
     let name:String
@@ -17,6 +16,16 @@ struct Episode:Codable {
     let airdate:String
     let runtime:Int
     let image:String
-    let summery:String
+    let summary:String
+    
+    var seasonString:String {
+        //String(format: "%02d",season)
+        "\(season)"
+    }
+    var episodeString:String{
+        String(format: "%02d",number)
+    }
+    
+
     
 }

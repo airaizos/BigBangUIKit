@@ -8,38 +8,49 @@
 import UIKit
 
 final class SeasonsTableViewController: UITableViewController {
+    
+    let modelLogic = ModelLogic.shared
+    let modelPersistence = ModelPersistence.shared
+    
+    let nameCell = "tableCell"
 
+    lazy var dataSource:EpisodesDiffableDataSource = {
+        EpisodesDiffableDataSource(tableView: tableView){ [self] table, indexPath, episode in
+            let cell = table.dequeueReusableCell(withIdentifier: nameCell, for: indexPath) as? TableViewCell
+            
+            cell?.episodeImage.image = UIImage(named: episode.image)
+            cell?.nameLabel.text = episode.name
+            cell?.seasonNumberLabel.text = episode.seasonString
+            
+            //favoriteButton
+            //markButton
+            //watchedbutton
+            //ratingSlider
+            return cell
+        }
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.dataSource = dataSource
+        dataSource.apply(modelLogic.snapshot)
     }
 
     // MARK: - Table view data source
-
+/*
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+      
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+      
+        return 1
     }
+ */
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

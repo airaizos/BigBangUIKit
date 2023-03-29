@@ -7,17 +7,32 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+final class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var episodeImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var seasonNumberLabel: UILabel!
+    @IBOutlet weak var episodeNumberLabel: UILabel!
+    
+    override func prepareForReuse() {
+        episodeImage.image = nil
+        nameLabel.text = nil
+        seasonNumberLabel.text = nil
+        episodeNumberLabel = nil
+      
+        
+      //  ratingSlider.setThumbImage(UIImage(systemName: "heart.fill"), for: .normal)
+    }
+    
     override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+      
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+   
     }
 
 }
