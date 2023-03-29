@@ -13,6 +13,9 @@ final class ModelLogic {
     let persistence = ModelPersistence.shared
     
     private var episodes: [Episode]
+    private var seasons:[Int] {
+        Array(Set(episodes.map { $0.season })).sorted()
+    }
     
     private init() {
         do {
@@ -26,7 +29,7 @@ final class ModelLogic {
     
     var snapshot:NSDiffableDataSourceSnapshot<String,Episode> {
         var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
-        let seasons = Array(Set(episodes.map { $0.seasonString })).sorted()
+        let seasons = seasons.map { String(format: "%0d",$0) }
         snapshot.appendSections(seasons)
         for season in seasons {
             let episodes = episodes.filter { $0.seasonString == season }
