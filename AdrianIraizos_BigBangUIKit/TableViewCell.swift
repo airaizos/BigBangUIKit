@@ -20,7 +20,6 @@ final class TableViewCell: UITableViewCell {
         seasonNumberLabel.text = nil
         episodeNumberLabel = nil
       
-        
       //  ratingSlider.setThumbImage(UIImage(systemName: "heart.fill"), for: .normal)
     }
     
