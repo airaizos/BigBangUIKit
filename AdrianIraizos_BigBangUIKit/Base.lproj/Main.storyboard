@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="RSm-9U-rXv" kind="relationship" relationship="viewControllers" id="amL-I8-HlC"/>
                         <segue destination="CEc-tE-UKH" kind="relationship" relationship="viewControllers" id="oGU-aI-yh3"/>
+                        <segue destination="QM3-9K-hVe" kind="relationship" relationship="viewControllers" id="38C-xj-tK4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LSz-dW-G8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -30,7 +31,7 @@
         <!--Seasons-->
         <scene sceneID="inl-Vb-IrT">
             <objects>
-                <tableViewController title="Seasons" id="E6T-oq-oRY" customClass="SeasonsTableViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="E6T-oq-oRY" customClass="SeasonsTableViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="u8S-KV-U6c">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +99,7 @@
                             <outlet property="delegate" destination="E6T-oq-oRY" id="I1G-np-gKY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Xey-UO-iP0"/>
+                    <navigationItem key="navigationItem" title="Seasons" id="Xey-UO-iP0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVr-gh-8Ej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,25 +213,77 @@
         <!--Favoritos-->
         <scene sceneID="rAo-Tt-bnE">
             <objects>
-                <collectionViewController id="CEc-tE-UKH" sceneMemberID="viewController">
+                <collectionViewController id="CEc-tE-UKH" customClass="FavoritesCollectionViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FpE-an-cg5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.76823079589999999" green="0.92270648479999995" blue="0.40305852889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wsx-GL-dCP">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="389" height="299"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="BLF-Ba-8W1">
-                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="favoriteCell" id="BLF-Ba-8W1" customClass="FavoritesViewCell" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target">
+                                <rect key="frame" x="2" y="0.0" width="389" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3NE-0q-ThC">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="389" height="299"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWG-kt-rYb">
+                                            <rect key="frame" x="34" y="8" width="321" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oJM-OA-EQK">
+                                            <rect key="frame" x="34" y="196" width="132" height="44"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atD-XA-YBi">
+                                                    <rect key="frame" x="0.0" y="5" width="44" height="34.333333333333336"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="star.circle" catalog="system"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Evu-eQ-ac6">
+                                                    <rect key="frame" x="44" y="5" width="44" height="34.333333333333336"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="pin.circle" catalog="system"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tkR-gm-ajT">
+                                                    <rect key="frame" x="88" y="5" width="44" height="34.333333333333336"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="RFE-0p-smW"/>
+                                            </constraints>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJO-d0-VfZ">
+                                            <rect key="frame" x="8" y="248" width="373" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0DP-vf-0Ya">
+                                            <rect key="frame" x="224" y="204" width="130" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="vNn-sH-qnM"/>
+                                            </constraints>
+                                        </slider>
+                                    </subviews>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="389" height="299"/>
+                                <connections>
+                                    <outlet property="checkButton" destination="tkR-gm-ajT" id="ztJ-yy-tDt"/>
+                                    <outlet property="episodeImage" destination="OWG-kt-rYb" id="8i6-Zh-NZH"/>
+                                    <outlet property="favoriteButton" destination="atD-XA-YBi" id="lrw-ef-daJ"/>
+                                    <outlet property="ratingSlider" destination="0DP-vf-0Ya" id="2kI-xV-ZrO"/>
+                                    <outlet property="watchedButton" destination="Evu-eQ-ac6" id="532-lm-ieI"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -242,9 +295,9 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNx-Aq-k6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="-424"/>
+            <point key="canvasLocation" x="43.511450381679388" y="-424.64788732394368"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Collection-->
         <scene sceneID="Z9D-2l-1OS">
             <objects>
                 <tableViewController id="QM3-9K-hVe" sceneMemberID="viewController">
@@ -273,7 +326,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Wa-Hr-Btk">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="oneCell" id="4Wa-Hr-Btk" customClass="SeasonCollectionViewCell" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target">
                                                             <rect key="frame" x="60.666666666666664" y="0.0" width="232" height="224"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -340,6 +393,14 @@
                                                                 <constraint firstAttribute="trailingMargin" secondItem="Cv0-1q-c2b" secondAttribute="trailing" constant="4" id="tIF-OI-BQw"/>
                                                             </constraints>
                                                             <size key="customSize" width="232" height="224"/>
+                                                            <connections>
+                                                                <outlet property="episodeImage" destination="bBI-6P-HoG" id="Yk9-oz-FRO"/>
+                                                                <outlet property="favoriteButton" destination="Zo9-KU-qZr" id="5Vr-Ah-D0r"/>
+                                                                <outlet property="markButton" destination="J3M-fI-MjJ" id="mIN-E0-gA4"/>
+                                                                <outlet property="nameLabel" destination="PEF-zD-0g4" id="vsE-P5-Y1U"/>
+                                                                <outlet property="ratingSlider" destination="Cv0-1q-c2b" id="or0-uD-mKe"/>
+                                                                <outlet property="watchedButton" destination="ntc-go-8SQ" id="7oY-tF-ZyO"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
@@ -354,10 +415,45 @@
                             <outlet property="delegate" destination="QM3-9K-hVe" id="DhR-Do-2hg"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Collection" image="circle.square" catalog="system" id="2ca-z2-ZJg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8R-eG-EoU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="759.5419847328244" y="-425.35211267605638"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="YRs-17-MgU">
+            <objects>
+                <collectionViewController id="tGH-rP-KP4" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qKH-bf-kmX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e25-GL-trH">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yRo-Y1-6K9">
+                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="USH-zD-9yG">
+                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="tGH-rP-KP4" id="kHo-FH-Xcj"/>
+                            <outlet property="delegate" destination="tGH-rP-KP4" id="qVF-fH-mTA"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2z-rl-YWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="-225"/>
         </scene>
         <!--Episodios-->
         <scene sceneID="4Hz-GL-M3F">
@@ -381,6 +477,7 @@
     </scenes>
     <resources>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="circle.square" catalog="system" width="128" height="114"/>
         <image name="film.circle" catalog="system" width="128" height="123"/>
         <image name="pin.circle" catalog="system" width="128" height="123"/>
         <image name="star.circle" catalog="system" width="128" height="123"/>

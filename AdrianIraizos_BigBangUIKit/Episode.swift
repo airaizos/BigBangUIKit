@@ -25,7 +25,22 @@ struct Episode:Hashable, Codable {
     var episodeString:String{
         String(format: "%02d",number)
     }
-    
+}
 
-    
+
+struct Favorites:Codable {
+    let ids:[Int]
+}
+
+struct Watched:Codable {
+    let ids:[Int]
+}
+
+struct Checked:Codable {
+    let ids:[Int]
+}
+
+struct Rating:Codable {
+    let id:Int
+    let rating:Int
 }

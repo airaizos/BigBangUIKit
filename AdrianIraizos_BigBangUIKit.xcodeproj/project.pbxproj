@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A044EC129D5A39A00B01D34 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC029D5A39A00B01D34 /* StaticTableViewController.swift */; };
+		3A044EC329D5C6D200B01D34 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC229D5C6D200B01D34 /* FavoritesCollectionViewController.swift */; };
+		3A044EC529D5CD8400B01D34 /* FavoritesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */; };
+		3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */; };
 		3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B429D4526C00C11B7A /* AppDelegate.swift */; };
 		3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B629D4526C00C11B7A /* SceneDelegate.swift */; };
 		3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BA29D4526C00C11B7A /* Main.storyboard */; };
@@ -19,10 +23,16 @@
 		3A5305DA29D4777800C11B7A /* ModelPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305D929D4777800C11B7A /* ModelPersistence.swift */; };
 		3A5305DC29D47B7300C11B7A /* SeasonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305DB29D47B7300C11B7A /* SeasonsTableViewController.swift */; };
 		3A5305DE29D4808900C11B7A /* EpisodesDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305DD29D4808900C11B7A /* EpisodesDiffableDataSource.swift */; };
+		3A54B92629D5977D00C6516B /* CollectionSeasonOneCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54B92529D5977D00C6516B /* CollectionSeasonOneCollectionViewController.swift */; };
+		3A54B92829D59D5900C6516B /* SeasonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A54B92729D59D5900C6516B /* SeasonCollectionViewCell.swift */; };
 		3AC44EFC29D499DD009D1434 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC44EFB29D499DD009D1434 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A044EC029D5A39A00B01D34 /* StaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
+		3A044EC229D5C6D200B01D34 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
+		3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewCell.swift; sourceTree = "<group>"; };
+		3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogic.swift; sourceTree = "<group>"; };
 		3A5305B129D4526C00C11B7A /* AdrianIraizos_BigBangUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianIraizos_BigBangUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5305B429D4526C00C11B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5305B629D4526C00C11B7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +47,8 @@
 		3A5305D929D4777800C11B7A /* ModelPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPersistence.swift; sourceTree = "<group>"; };
 		3A5305DB29D47B7300C11B7A /* SeasonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewController.swift; sourceTree = "<group>"; };
 		3A5305DD29D4808900C11B7A /* EpisodesDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDiffableDataSource.swift; sourceTree = "<group>"; };
+		3A54B92529D5977D00C6516B /* CollectionSeasonOneCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSeasonOneCollectionViewController.swift; sourceTree = "<group>"; };
+		3A54B92729D59D5900C6516B /* SeasonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AC44EFB29D499DD009D1434 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +111,7 @@
 				3A5305D729D4776F00C11B7A /* ModelLogic.swift */,
 				3A5305D929D4777800C11B7A /* ModelPersistence.swift */,
 				3A5305DD29D4808900C11B7A /* EpisodesDiffableDataSource.swift */,
+				3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -106,9 +119,10 @@
 		3A5305D229D4769E00C11B7A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3AC44EFB29D499DD009D1434 /* DetailViewController.swift */,
-				3A5305DB29D47B7300C11B7A /* SeasonsTableViewController.swift */,
 				3A5305D429D476BE00C11B7A /* Cell */,
+				3A54B92729D59D5900C6516B /* SeasonCollectionViewCell.swift */,
+				3A54B92529D5977D00C6516B /* CollectionSeasonOneCollectionViewController.swift */,
+				3A044EC029D5A39A00B01D34 /* StaticTableViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -116,6 +130,9 @@
 		3A5305D329D476A300C11B7A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3AC44EFB29D499DD009D1434 /* DetailViewController.swift */,
+				3A5305DB29D47B7300C11B7A /* SeasonsTableViewController.swift */,
+				3A044EC229D5C6D200B01D34 /* FavoritesCollectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -124,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5305CF29D4768900C11B7A /* TableViewCell.swift */,
+				3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -202,8 +220,14 @@
 			files = (
 				3AC44EFC29D499DD009D1434 /* DetailViewController.swift in Sources */,
 				3A5305D029D4768900C11B7A /* TableViewCell.swift in Sources */,
+				3A044EC529D5CD8400B01D34 /* FavoritesViewCell.swift in Sources */,
 				3A5305D629D476DC00C11B7A /* Episode.swift in Sources */,
+				3A044EC129D5A39A00B01D34 /* StaticTableViewController.swift in Sources */,
+				3A044EC329D5C6D200B01D34 /* FavoritesCollectionViewController.swift in Sources */,
 				3A5305DC29D47B7300C11B7A /* SeasonsTableViewController.swift in Sources */,
+				3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */,
+				3A54B92829D59D5900C6516B /* SeasonCollectionViewCell.swift in Sources */,
+				3A54B92629D5977D00C6516B /* CollectionSeasonOneCollectionViewController.swift in Sources */,
 				3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */,
 				3A5305D829D4776F00C11B7A /* ModelLogic.swift in Sources */,
 				3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */,

@@ -17,13 +17,46 @@ final class ModelLogic {
         Array(Set(episodes.map { $0.season })).sorted()
     }
     
+    
+    private var favorites:[Int] {
+        didSet {
+            try? persistence.saveFavorites(ids: favorites)
+        }
+    }
+    
+    private var watched:[Int] {
+        didSet {
+            try? persistence.saveWatched(ids: watched)
+        }
+    }
+    
+    private var checked:[Int] {
+        didSet {
+            try? persistence.saveChecked(ids: checked)
+        }
+    }
+    
+    private var ratings:[Rating] {
+        didSet {
+            try? persistence.saveRatings(ratings)
+        }
+    }
+    
     private init() {
         do {
             self.episodes = try persistence.loadEpisodes()
-            
+            self.favorites = try persistence.loadFavorites()
+            self.watched = try persistence.loadWatched()
+            self.ratings = try persistence.loadRatings()
+            self.checked = try persistence.loadChecks()
         } catch {
-            print("error loadingEpisodes")
+           
             self.episodes = []
+            self.favorites = []
+            self.watched = []
+            self.ratings = []
+            self.checked = []
+            
         }
     }
     
@@ -38,5 +71,43 @@ final class ModelLogic {
         return snapshot
     }
     
+    //Temporadas??
+    func getSnapshotForSeason(number:Int) -> NSDiffableDataSourceSnapshot<String,Episode> {
+        var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
+        let episodes = episodes.filter { $0.season == number }
+        snapshot.appendItems(episodes, toSection: "\(number)")
+        return snapshot
+    }
     
+    var snapshotSeasonOne:NSDiffableDataSourceSnapshot<String,Episode> {
+        return getSnapshotForSeason(number: 1)
+    }
+    
+    //MARK: Favoritos
+    func getFavoritesCount() -> Int {
+        favorites.count
+    }
+    
+    func getEpisodeFromId(indexPath: IndexPath) -> Episode? {
+        let id = favorites[indexPath.row]
+        return episodes.first { $0.id == id }
+    }
+    
+    func isFavorite(id:Int) -> Bool {
+        favorites.contains(id)
+    }
+    
+    func isWatched(id:Int) -> Bool {
+        watched.contains(id)
+    }
+    
+    func isCheck(id:Int) -> Bool {
+        checked.contains(id)
+    }
+    
+    func getRating(id:Int) -> Float {
+        let ratings = ratings.filter { $0.id == id }
+        guard let rating = ratings.first?.rating else { return 0.0 }
+        return Float(rating)
+    }
 }
