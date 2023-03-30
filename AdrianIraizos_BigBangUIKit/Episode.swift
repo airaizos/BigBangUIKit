@@ -40,7 +40,7 @@ struct Checked:Codable {
     let ids:[Int]
 }
 
-struct Rating:Codable {
+struct Rating:Codable,Hashable {
     let id:Int
     let rating:Int
 }

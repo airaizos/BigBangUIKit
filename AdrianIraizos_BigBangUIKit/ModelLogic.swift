@@ -21,24 +21,28 @@ final class ModelLogic {
     private var favorites:[Int] {
         didSet {
             try? persistence.saveFavorites(ids: favorites)
+            NotificationCenter.default.post(name: .favoritesChanged,object: nil)
         }
     }
     
     private var watched:[Int] {
         didSet {
             try? persistence.saveWatched(ids: watched)
+            NotificationCenter.default.post(name: .watchedChanged,object: nil)
         }
     }
     
     private var checked:[Int] {
         didSet {
             try? persistence.saveChecked(ids: checked)
+            NotificationCenter.default.post(name: .checkChanged,object: nil)
         }
     }
     
-    private var ratings:[Rating] {
+    private var ratings:Set<Rating> {
         didSet {
             try? persistence.saveRatings(ratings)
+            NotificationCenter.default.post(name: .ratingChanged,object: nil)
         }
     }
     
@@ -97,17 +101,42 @@ final class ModelLogic {
         favorites.contains(id)
     }
     
+    func toggleFavorite(id:Int) {
+        switch favorites.contains(id) {
+        case true: favorites.removeAll { $0 == id }
+        case false: favorites.append(id)
+        }
+    }
+    
+    //MARK: Watched
     func isWatched(id:Int) -> Bool {
         watched.contains(id)
     }
     
+    func toggleWatch(id:Int) {
+        switch watched.contains(id) {
+        case true: watched.removeAll { $0 == id }
+        case false: watched.append(id)
+        }
+    }
+    
     func isCheck(id:Int) -> Bool {
         checked.contains(id)
+    }
+    func toggleChecked(id:Int) {
+        switch checked.contains(id) {
+        case true: checked.removeAll { $0 == id }
+        case false: checked.append(id)
+        }
     }
     
     func getRating(id:Int) -> Float {
         let ratings = ratings.filter { $0.id == id }
         guard let rating = ratings.first?.rating else { return 0.0 }
         return Float(rating)
+    }
+    
+    func saveRating(id:Int,value:Float) {
+        ratings.insert(Rating(id: id, rating: Int(value)))
     }
 }

@@ -14,29 +14,30 @@ final class ViewLogic {
     private init() { }
     
     let modelLogic = ModelLogic.shared
-    
-    
+    var symbolConfiguration =  UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .title3))
     func getFavoriteImage(episodeId:Int) -> UIImage {
         switch modelLogic.isFavorite(id: episodeId) {
-        case true: return UIImage(systemName: "star.circle")!
-        case false: return UIImage(systemName: "star.slash")!
+        case true: return UIImage(systemName: "star.circle", withConfiguration: symbolConfiguration)!
+        case false: return UIImage(systemName: "star.slash", withConfiguration: symbolConfiguration)!
         }
     }
     func getWatchedImage(episodeId:Int) -> UIImage {
         switch modelLogic.isWatched(id: episodeId) {
-        case true: return UIImage(systemName: "eye.circle")!
-        case false: return UIImage(systemName: "eye.slash.circle")!
+        case true: return UIImage(systemName: "eye.circle", withConfiguration: symbolConfiguration)!
+        case false: return UIImage(systemName: "eye.slash.circle", withConfiguration: symbolConfiguration)!
         }
     }
     func getCheckedImage(episodeId:Int) -> UIImage {
         switch modelLogic.isCheck(id: episodeId) {
-        case true: return UIImage(systemName: "checkmark.circle")!
-        case false: return UIImage(systemName: "x.circle")!
+        case true: return UIImage(systemName: "checkmark.circle", withConfiguration: symbolConfiguration)!
+        case false: return UIImage(systemName: "x.circle", withConfiguration: symbolConfiguration)!
         }
     }
     
     func getRatingImage() -> UIImage {
-        UIImage(systemName: "heart.circle")!
+        //MARK: TODO quiza el slider no es la mejor opción
+
+        return UIImage(systemName: "heart.circle", withConfiguration: symbolConfiguration)!
     }
     
 }
