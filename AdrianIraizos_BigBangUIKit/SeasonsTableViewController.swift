@@ -11,17 +11,19 @@ final class SeasonsTableViewController: UITableViewController {
     
     let modelLogic = ModelLogic.shared
     let modelPersistence = ModelPersistence.shared
+    let viewLogic = ViewLogic.shared
     
     let nameCell = "tableCell"
     
     lazy var dataSource:EpisodesDiffableDataSource = {
         EpisodesDiffableDataSource(tableView: tableView){ [self] table, indexPath, episode in
-            let cell = table.dequeueReusableCell(withIdentifier: nameCell, for: indexPath) as? TableViewCell
+            guard let cell = table.dequeueReusableCell(withIdentifier: nameCell, for: indexPath) as? TableViewCell else { return UITableViewCell() }
             
-            cell?.episodeImage.image = UIImage(named: episode.image)
-            cell?.nameLabel.text = episode.name
-            cell?.seasonNumberLabel.text = episode.seasonString
-            
+            cell.episodeImage.image = viewLogic.getImageFrom(episode: episode)
+            cell.nameLabel.text = episode.name
+            cell.episodeNumberLabel.text = episode.episodeString
+            cell.airDateLabel.text = episode.airDateString
+          
             //favoriteButton
             //markButton
             //watchedbutton

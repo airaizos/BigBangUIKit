@@ -19,12 +19,20 @@ struct Episode:Hashable, Codable {
     let summary:String
     
     var seasonString:String {
-        //String(format: "%02d",season)
         "\(season)"
     }
     var episodeString:String{
         String(format: "%02d",number)
     }
+    var airDateString:String {
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+        guard let dateD = df.date(from: airdate) else { return "" }
+        df.dateFormat = "dd MMM yyyy"
+
+        return df.string(from: dateD).capitalized
+    }
+    
 }
 
 

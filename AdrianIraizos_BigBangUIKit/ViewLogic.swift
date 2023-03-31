@@ -40,4 +40,9 @@ final class ViewLogic {
         return UIImage(systemName: "heart.circle", withConfiguration: symbolConfiguration)!
     }
     
+    func getImageFrom(episode:Episode) -> UIImage {
+        return UIImage(named: episode.image) ?? UIImage(systemName: "ellipsis.rectangle")!
+    }
+    
+    
 }

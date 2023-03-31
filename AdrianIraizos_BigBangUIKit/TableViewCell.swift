@@ -11,14 +11,14 @@ final class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var episodeImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var seasonNumberLabel: UILabel!
     @IBOutlet weak var episodeNumberLabel: UILabel!
+    @IBOutlet weak var airDateLabel: UILabel!
     
     override func prepareForReuse() {
         episodeImage.image = nil
         nameLabel.text = nil
-        seasonNumberLabel.text = nil
-        episodeNumberLabel = nil
+        episodeNumberLabel.text = nil
+        airDateLabel.text = nil
       
       //  ratingSlider.setThumbImage(UIImage(systemName: "heart.fill"), for: .normal)
     }
