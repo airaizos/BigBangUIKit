@@ -145,49 +145,49 @@
                                 <color key="textColor" name="BBTRed"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H2N-tr-cVA">
-                                <rect key="frame" x="16" y="142.66666666666666" width="343" height="180.99999999999997"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H2N-tr-cVA">
+                                <rect key="frame" x="39" y="142.66666666666666" width="297" height="169.99999999999997"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="H2N-tr-cVA" secondAttribute="height" multiplier="36:19" id="YWc-6A-zDr"/>
+                                    <constraint firstAttribute="height" constant="170" id="RYl-lT-LrC"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" name="BBTGreen"/>
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="BBTGray"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFk-Cs-j1j">
-                                <rect key="frame" x="16.000000000000004" y="331.66666666666669" width="56.333333333333343" height="20.333333333333314"/>
+                                <rect key="frame" x="39" y="321.66666666666669" width="56.333333333333343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="BBTGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XJ-Bn-RDj">
-                                <rect key="frame" x="253" y="331.66666666666669" width="61" height="20.333333333333314"/>
+                                <rect key="frame" x="242.33333333333337" y="321.66666666666669" width="61" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="BBTGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKU-LO-dQx">
-                                <rect key="frame" x="80.333333333333329" y="331.66666666666669" width="18" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="103.33333333333333" y="321.66666666666669" width="21" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" name="BBTGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhz-BP-G8G">
-                                <rect key="frame" x="322" y="331.66666666666669" width="21" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="311.33333333333331" y="321.66666666666669" width="24.666666666666686" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" name="BBTGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33x-uz-5ph" userLabel="FWC Stack View">
-                                <rect key="frame" x="16" y="360" width="149" height="44"/>
+                                <rect key="frame" x="39" y="350" width="149" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT0-ic-8C2">
                                         <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="44"/>
@@ -219,7 +219,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX3-yn-t27">
-                                        <rect key="frame" x="99.333333333333329" y="0.0" width="49.666666666666671" height="44"/>
+                                        <rect key="frame" x="99.333333333333343" y="0.0" width="49.666666666666657" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="oOg-jy-iLC"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="yYY-jH-Ayy"/>
@@ -235,7 +235,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0L1-0n-2tJ" userLabel="Rating Stack View">
-                                <rect key="frame" x="234" y="367" width="125" height="30"/>
+                                <rect key="frame" x="211" y="357" width="125" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbH-zK-mwI" userLabel="1">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
@@ -303,54 +303,62 @@
                                     <constraint firstItem="DFV-Ca-714" firstAttribute="height" secondItem="pbH-zK-mwI" secondAttribute="height" id="sLF-bq-MTW"/>
                                     <constraint firstItem="DFV-Ca-714" firstAttribute="width" secondItem="pbH-zK-mwI" secondAttribute="width" id="zwu-Ps-lNG"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="BBTGray"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ciz-YT-7XP">
-                                <rect key="frame" x="16" y="405" width="72.666666666666671" height="20.333333333333314"/>
+                                <rect key="frame" x="16" y="395" width="72.666666666666671" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="BBTGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOh-Rb-fla">
-                                <rect key="frame" x="198.33333333333334" y="405" width="100.00000000000003" height="20.333333333333314"/>
+                                <rect key="frame" x="190.66666666666666" y="395" width="99.999999999999972" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="BBTGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="airdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-tl-rdI">
-                                <rect key="frame" x="306.33333333333331" y="405" width="52.666666666666686" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="298.66666666666669" y="395" width="60.333333333333314" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" name="BBTGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="KDm-us-9pO">
-                                <rect key="frame" x="16" y="433.33333333333331" width="343" height="162.33333333333331"/>
+                                <rect key="frame" x="16" y="423.33333333333331" width="343" height="162.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" name="BBTBlack"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fn-X4-puB">
                                 <rect key="frame" x="16" y="694.66666666666663" width="343" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Go to Main Page">
+                                <buttonConfiguration key="configuration" style="plain" title="See more in tvmaze.com">
                                     <color key="baseForegroundColor" name="BBTPale"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="externalLinkPressed:" destination="t29-1H-057" eventType="touchUpInside" id="eNT-X6-XjB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ECp-IC-N2d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xhz-BP-G8G" firstAttribute="trailing" secondItem="H2N-tr-cVA" secondAttribute="trailing" id="0dJ-9X-odW"/>
                             <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="3Rn-nW-9oX" secondAttribute="trailing" constant="16" id="24z-TQ-aOw"/>
+                            <constraint firstItem="33x-uz-5ph" firstAttribute="leading" secondItem="H2N-tr-cVA" secondAttribute="leading" id="4RQ-Y0-Uev"/>
                             <constraint firstItem="Ciz-YT-7XP" firstAttribute="leading" secondItem="ECp-IC-N2d" secondAttribute="leading" constant="16" id="77O-xe-vwC"/>
-                            <constraint firstItem="H2N-tr-cVA" firstAttribute="leading" secondItem="ECp-IC-N2d" secondAttribute="leading" constant="16" id="8Ps-Fe-VLG"/>
+                            <constraint firstItem="KFk-Cs-j1j" firstAttribute="leading" secondItem="H2N-tr-cVA" secondAttribute="leading" id="8aJ-Ul-dHT"/>
                             <constraint firstItem="H2N-tr-cVA" firstAttribute="top" secondItem="3Rn-nW-9oX" secondAttribute="bottom" constant="8" symbolic="YES" id="FxH-XG-MpU"/>
                             <constraint firstItem="KDm-us-9pO" firstAttribute="leading" secondItem="ECp-IC-N2d" secondAttribute="leading" constant="16" id="Fxz-da-Urg"/>
-                            <constraint firstItem="33x-uz-5ph" firstAttribute="leading" secondItem="ECp-IC-N2d" secondAttribute="leading" constant="16" id="H9V-aT-qNS"/>
                             <constraint firstItem="sOh-Rb-fla" firstAttribute="top" secondItem="Ciz-YT-7XP" secondAttribute="top" id="HhH-cU-18S"/>
                             <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="6Fn-X4-puB" secondAttribute="trailing" constant="16" id="HjD-H5-qF0"/>
                             <constraint firstItem="Uc7-tl-rdI" firstAttribute="leading" secondItem="sOh-Rb-fla" secondAttribute="trailing" constant="8" symbolic="YES" id="PIC-8d-P4V"/>
-                            <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="0L1-0n-2tJ" secondAttribute="trailing" constant="16" id="QBJ-M0-8eR"/>
                             <constraint firstItem="KDm-us-9pO" firstAttribute="top" secondItem="Ciz-YT-7XP" secondAttribute="bottom" constant="8" symbolic="YES" id="RwR-1i-HV1"/>
                             <constraint firstItem="0L1-0n-2tJ" firstAttribute="centerY" secondItem="33x-uz-5ph" secondAttribute="centerY" id="TKs-Hk-2rf"/>
                             <constraint firstItem="Uc7-tl-rdI" firstAttribute="top" secondItem="0L1-0n-2tJ" secondAttribute="bottom" constant="8" symbolic="YES" id="UC7-1d-GlZ"/>
@@ -358,19 +366,19 @@
                             <constraint firstItem="Uc7-tl-rdI" firstAttribute="top" secondItem="sOh-Rb-fla" secondAttribute="top" id="W0H-nX-zRc"/>
                             <constraint firstItem="0L1-0n-2tJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="33x-uz-5ph" secondAttribute="trailing" constant="8" symbolic="YES" id="XnP-u9-82E"/>
                             <constraint firstItem="3Rn-nW-9oX" firstAttribute="top" secondItem="ECp-IC-N2d" secondAttribute="top" id="dxJ-wz-2zZ"/>
-                            <constraint firstItem="KFk-Cs-j1j" firstAttribute="leading" secondItem="ECp-IC-N2d" secondAttribute="leading" constant="16" id="eZ6-j5-2l1"/>
                             <constraint firstItem="33x-uz-5ph" firstAttribute="top" secondItem="KFk-Cs-j1j" secondAttribute="bottom" constant="8" symbolic="YES" id="h73-LK-ret"/>
-                            <constraint firstItem="xhz-BP-G8G" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="8" symbolic="YES" id="hUR-TV-sMf"/>
+                            <constraint firstItem="xhz-BP-G8G" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="9.0000000000000568" id="hUR-TV-sMf"/>
                             <constraint firstItem="xhz-BP-G8G" firstAttribute="leading" secondItem="2XJ-Bn-RDj" secondAttribute="trailing" constant="8" symbolic="YES" id="hd8-HE-L5L"/>
                             <constraint firstItem="sOh-Rb-fla" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ciz-YT-7XP" secondAttribute="trailing" constant="8" symbolic="YES" id="iXU-aZ-W3D"/>
                             <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="KDm-us-9pO" secondAttribute="trailing" constant="16" id="jDH-OM-wF2"/>
-                            <constraint firstItem="KFk-Cs-j1j" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="8" symbolic="YES" id="jcN-Zt-rMY"/>
+                            <constraint firstItem="KFk-Cs-j1j" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="9.0000000000000568" id="jcN-Zt-rMY"/>
+                            <constraint firstItem="H2N-tr-cVA" firstAttribute="centerX" secondItem="gOM-3U-e0t" secondAttribute="centerX" id="mA6-vR-2zi"/>
                             <constraint firstItem="2XJ-Bn-RDj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OKU-LO-dQx" secondAttribute="trailing" constant="8" symbolic="YES" id="mnu-Wc-bpB"/>
-                            <constraint firstItem="OKU-LO-dQx" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="8" symbolic="YES" id="mzh-Jy-hPY"/>
-                            <constraint firstItem="2XJ-Bn-RDj" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="8" symbolic="YES" id="nu6-gW-lg4"/>
-                            <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="H2N-tr-cVA" secondAttribute="trailing" constant="16" id="pqO-ZM-OGD"/>
+                            <constraint firstItem="OKU-LO-dQx" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="9.0000000000000568" id="mzh-Jy-hPY"/>
+                            <constraint firstItem="2XJ-Bn-RDj" firstAttribute="top" secondItem="H2N-tr-cVA" secondAttribute="bottom" constant="9.0000000000000568" id="nu6-gW-lg4"/>
+                            <constraint firstItem="0L1-0n-2tJ" firstAttribute="trailing" secondItem="H2N-tr-cVA" secondAttribute="trailing" id="pbF-zv-6gc"/>
+                            <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="H2N-tr-cVA" secondAttribute="trailing" constant="39" id="pqO-ZM-OGD"/>
                             <constraint firstItem="OKU-LO-dQx" firstAttribute="leading" secondItem="KFk-Cs-j1j" secondAttribute="trailing" constant="8" symbolic="YES" id="rQy-Wp-osw"/>
-                            <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="xhz-BP-G8G" secondAttribute="trailing" constant="32" id="tua-24-59U"/>
                             <constraint firstItem="6Fn-X4-puB" firstAttribute="leading" secondItem="ECp-IC-N2d" secondAttribute="leading" constant="16" id="ump-DD-0c6"/>
                             <constraint firstItem="ECp-IC-N2d" firstAttribute="bottom" secondItem="6Fn-X4-puB" secondAttribute="bottom" id="wET-5Y-PEo"/>
                             <constraint firstItem="ECp-IC-N2d" firstAttribute="trailing" secondItem="Uc7-tl-rdI" secondAttribute="trailing" constant="16" id="yaf-IJ-stg"/>
@@ -379,6 +387,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="skc-sf-bkj"/>
                     <connections>
+                        <outlet property="airDateString" destination="Uc7-tl-rdI" id="HOH-2f-5u4"/>
                         <outlet property="checkButton" destination="mX3-yn-t27" id="gQz-wk-r9h"/>
                         <outlet property="episodeImage" destination="H2N-tr-cVA" id="3oP-zL-lFr"/>
                         <outlet property="episodeNumberLabel" destination="xhz-BP-G8G" id="OvW-FD-kaS"/>

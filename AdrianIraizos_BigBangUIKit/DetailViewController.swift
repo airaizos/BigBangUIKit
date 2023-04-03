@@ -19,6 +19,7 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak var episodeImage: UIImageView!
     @IBOutlet weak var episodeNumberLabel: UILabel!
     @IBOutlet weak var summaryTextView: UITextView!
+    @IBOutlet weak var airDateString: UILabel!
     
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var watchedButton: UIButton!
@@ -32,6 +33,8 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak var rating4: UIButton!
     @IBOutlet weak var rating5: UIButton!
     
+    // tvmaze
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +42,11 @@ final class DetailViewController: UIViewController {
         nameLabel.text = episode.name
         seasonNumberLabel.text = episode.seasonString
         episodeImage.image = UIImage(named: episode.image)
+        episodeNumberLabel.text = episode.episodeString
+        airDateString.text = episode.airDateString
         summaryTextView.text = episode.summary
+      
+        
         favoriteButton.setImage(viewLogic.getFavoriteImage(episodeId: episode.id), for: .normal)
         watchedButton.setImage(viewLogic.getWatchedImage(episodeId: episode.id), for: .normal)
         checkButton.setImage(viewLogic.getCheckedImage(episodeId: episode.id), for: .normal)
@@ -125,6 +132,11 @@ final class DetailViewController: UIViewController {
         print(episode.id,modelLogic.getRating(id: episode.id))
     }
     
+    
+    @IBAction func externalLinkPressed(_ sender: UIButton) {
+        guard let episode = selectedEpisode else { return }
+        UIApplication.shared.open(episode.url)
+    }
     
     
     
