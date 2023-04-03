@@ -51,3 +51,27 @@ extension UIView {
         set { layer.shadowOpacity = newValue }
         }
 }
+
+
+extension UIColor {
+    static let BBTYellow = UIColor(named: "BBTYellow")
+    static let BBTWhite = UIColor(named: "BBTWhite")
+    static let BBTRed = UIColor(named: "BBTRed")
+    static let BBTPale = UIColor(named: "BBTPale")
+    static let BBTGreen = UIColor(named: "BBTGreen")
+    static let BBTGray = UIColor(named: "BBTGray")
+    static let BBTBlue = UIColor(named: "BBTBlue")
+    static let BBTBlack = UIColor(named: "BBTBlack")
+    static let BBTGreenish = UIColor(named: "BBTGreenish")
+    static let BBTOcher = UIColor(named: "BBTOcher")
+    static let BBTRedish = UIColor(named: "BBTRedish")
+}
+
+
+extension UIImage {
+    
+  
+}
+
+
+

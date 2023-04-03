@@ -15,34 +15,64 @@ final class ViewLogic {
     
     let modelLogic = ModelLogic.shared
     var symbolConfiguration =  UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .title3))
+    
+    //UIImage(systemName: "star.circle", configuration: UIImage.SymbolConfiguration(weight: .light))?.applyingSymbolConfiguration(UIImage.SymbolConfiguration(paletteColors:[.systemOrange, .teal, .systemYellow]))
+    
+    var lightConfig = UIImage.SymbolConfiguration(weight: .light)
+    
+    var symbo = UIImage.SymbolConfiguration(paletteColors: [.BBTYellow!,.BBTYellow!.withAlphaComponent(0.5)])
+    
     func getFavoriteImage(episodeId:Int) -> UIImage {
         switch modelLogic.isFavorite(id: episodeId) {
-        case true: return UIImage(systemName: "star.circle", withConfiguration: symbolConfiguration)!
-        case false: return UIImage(systemName: "star.slash", withConfiguration: symbolConfiguration)!
+        case true: return buttonWithSymbolConfiguration(systemName: "star.circle", color: .BBTYellow!)
+            
+        case false: return buttonWithSymbolConfiguration(systemName: "star.slash", color: .BBTPale!)
+          
         }
     }
     func getWatchedImage(episodeId:Int) -> UIImage {
         switch modelLogic.isWatched(id: episodeId) {
-        case true: return UIImage(systemName: "eye.circle", withConfiguration: symbolConfiguration)!
-        case false: return UIImage(systemName: "eye.slash.circle", withConfiguration: symbolConfiguration)!
+        case true: return buttonWithSymbolConfiguration(systemName: "eye.circle", color: .BBTGreen!)
+            
+        case false: return buttonWithSymbolConfiguration(systemName: "eye.slash.circle", color: .BBTPale!)
         }
     }
     func getCheckedImage(episodeId:Int) -> UIImage {
         switch modelLogic.isCheck(id: episodeId) {
-        case true: return UIImage(systemName: "checkmark.circle", withConfiguration: symbolConfiguration)!
-        case false: return UIImage(systemName: "x.circle", withConfiguration: symbolConfiguration)!
+        case true: return buttonWithSymbolConfiguration(systemName: "checkmark.circle", color: .BBTGreenish!)
+
+        case false: return buttonWithSymbolConfiguration(systemName: "x.circle", color: .BBTPale!)
         }
     }
     
-    func getRatingImage() -> UIImage {
-        //MARK: TODO quiza el slider no es la mejor opción
-
-        return UIImage(systemName: "heart.circle", withConfiguration: symbolConfiguration)!
+    func getRatingImage(episodeId:Int, buttonRating: Int) -> UIImage {
+        let active = buttonWithSymbolConfiguration(systemName: "heart.circle", color: .BBTRed!)
+        let inactive = buttonWithSymbolConfiguration(systemName: "heart.circle", color: .BBTPale!)
+        let rating = modelLogic.getRating(id: episodeId)
+        
+        switch buttonRating {
+        case 1: return rating >= 1 ? active : inactive
+        case 2: return rating >= 2 ? active : inactive
+        case 3: return rating >= 3 ? active : inactive
+        case 4: return rating >= 4 ? active : inactive
+        case 5: return rating >= 5 ? active : inactive
+            
+        default: ()
+        }
+        return inactive
     }
+    
+    
+    
     
     func getImageFrom(episode:Episode) -> UIImage {
         return UIImage(named: episode.image) ?? UIImage(systemName: "ellipsis.rectangle")!
     }
     
+    func buttonWithSymbolConfiguration(systemName: String, color: UIColor) -> UIImage {
+         
+        UIImage(systemName: systemName, withConfiguration: UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .title3)).applying(UIImage.SymbolConfiguration(weight: .light)).applying(UIImage.SymbolConfiguration(paletteColors: [color, color.withAlphaComponent(0.4)])))!
+     }
+     
     
 }

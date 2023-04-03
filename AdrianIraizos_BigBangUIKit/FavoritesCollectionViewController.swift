@@ -35,8 +35,8 @@ final class FavoritesCollectionViewController: UICollectionViewController {
         cell.favoriteButton.setImage(viewLogic.getFavoriteImage(episodeId: episode.id), for: .normal)
         cell.watchedButton.setImage(viewLogic.getWatchedImage(episodeId: episode.id), for: .normal)
         cell.checkButton.setImage(viewLogic.getCheckedImage(episodeId: episode.id), for: .normal)
-        cell.ratingSlider.setThumbImage(viewLogic.getRatingImage(), for: .normal)
-        cell.ratingSlider.setValue(modelLogic.getRating(id: episode.id), animated: true)
+       // cell.ratingSlider.setThumbImage(viewLogic.getRatingImage(), for: .normal)
+     //   cell.ratingSlider.setValue(modelLogic.getRating(id: episode.id), animated: true)
         return cell
     }
     
