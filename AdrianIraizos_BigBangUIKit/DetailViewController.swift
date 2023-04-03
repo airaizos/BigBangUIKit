@@ -23,7 +23,7 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var watchedButton: UIButton!
     @IBOutlet weak var checkButton: UIButton!
-    @IBOutlet weak var ratingSlider: UISlider!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +33,7 @@ final class DetailViewController: UIViewController {
         seasonNumberLabel.text = episode.seasonString
         episodeImage.image = UIImage(named: episode.image)
         summaryTextView.text = episode.summary
-        ratingSlider.setThumbImage(viewLogic.getRatingImage(), for: .normal)
-        ratingSlider.setThumbImage(viewLogic.getRatingImage(), for: .selected)
-        ratingSlider.setThumbImage(viewLogic.getRatingImage(), for: .highlighted)
+    
         
         
         NotificationCenter.default.addObserver(forName: .favoritesChanged, object: nil, queue: .main) { [self] _ in
@@ -64,11 +62,6 @@ final class DetailViewController: UIViewController {
     @IBAction func checkPressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.toggleChecked(id: episode.id)
-    }
-    
-    @IBAction func ratingChanged(_ sender: UISlider) {
-        guard let episode = selectedEpisode else { return }
-        modelLogic.saveRating(id: episode.id, value: sender.value)
     }
     
     
