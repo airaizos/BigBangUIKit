@@ -455,27 +455,18 @@
                                                     <buttonConfiguration key="configuration" style="plain">
                                                         <imageReference key="image" image="star.circle" catalog="system" symbolScale="large"/>
                                                     </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="favoriteButtonPressed:" destination="CEc-tE-UKH" eventType="touchUpInside" id="fGQ-Ud-CQk"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Evu-eQ-ac6">
                                                     <rect key="frame" x="101.5" y="0.0" width="94" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="eye.circle" catalog="system"/>
-                                                    <connections>
-                                                        <action selector="watchedButtonPressed:" destination="CEc-tE-UKH" eventType="touchUpInside" id="Tq8-0s-C7S"/>
-                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tkR-gm-ajT">
                                                     <rect key="frame" x="203.5" y="0.0" width="93.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system"/>
-                                                    <connections>
-                                                        <action selector="checkedButtonPressed:" destination="CEc-tE-UKH" eventType="touchUpInside" id="uY0-NV-wl3"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
