@@ -69,7 +69,7 @@ final class ModelLogic {
         let seasons = seasons.map { String(format: "%0d",$0) }
         snapshot.appendSections(seasons)
         for season in seasons {
-            let episodes = episodes.filter { $0.seasonString == season }
+            let episodes = filteredEpisodes.filter { $0.seasonString == season }
             snapshot.appendItems(episodes, toSection: season)
         }
         return snapshot
@@ -78,7 +78,7 @@ final class ModelLogic {
     //Temporadas??
     func getSnapshotForSeason(number:Int) -> NSDiffableDataSourceSnapshot<String,Episode> {
         var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
-        let episodes = episodes.filter { $0.season == number }
+        let episodes = filteredEpisodes.filter { $0.season == number }
         snapshot.appendItems(episodes, toSection: "\(number)")
         return snapshot
     }
@@ -141,14 +141,24 @@ final class ModelLogic {
     }
     
     func ratingPressed(episodeId: Int,rating:Int) {
-        
-        
-//ratings.removeValue(forKey: episodeId)
-
         ratings[episodeId] = rating
-        
-        
     }
     
+    //MARK: SearchBar
     
+    var searchText = ""
+    var filteredEpisodes:[Episode] {
+        episodes.filter {
+            switch searchText.isEmpty {
+            case true: return true
+            case false: return
+                $0.name.lowercased().trimmingCharacters(in: .whitespaces).contains(searchText.lowercased()) ||
+                $0.summary.lowercased().trimmingCharacters(in: .whitespaces).contains(searchText.lowercased()) ||
+                $0.episodeString.contains(searchText) ||
+                $0.seasonString.contains(searchText) ||
+                $0.airDateString.contains(searchText)
+
+            }
+        }
+    }
 }

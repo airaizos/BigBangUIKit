@@ -75,4 +75,13 @@ final class ViewLogic {
      }
      
     
+    // SearchBar
+    func getSearchBar() -> UISearchController {
+        let search = UISearchController(searchResultsController: nil)
+        search.searchBar.placeholder = "Search by episode, summary..."
+        search.obscuresBackgroundDuringPresentation = false
+        return search
+    }
+    
+    
 }

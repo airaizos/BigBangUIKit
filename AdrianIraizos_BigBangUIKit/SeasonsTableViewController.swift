@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SeasonsTableViewController: UITableViewController {
+final class SeasonsTableViewController: UITableViewController,UISearchResultsUpdating {
     
     let modelLogic = ModelLogic.shared
     let modelPersistence = ModelPersistence.shared
@@ -31,8 +31,18 @@ final class SeasonsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let searchController = viewLogic.getSearchBar()
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
         tableView.dataSource = dataSource
         dataSource.apply(modelLogic.snapshot)
+    }
+    
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let search = searchController.searchBar.text  else { return }
+        modelLogic.searchText = search
+        dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
     }
     
     
