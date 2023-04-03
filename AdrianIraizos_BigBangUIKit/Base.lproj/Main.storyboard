@@ -417,21 +417,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BBTGray"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="20" id="Wsx-GL-dCP">
-                            <size key="itemSize" width="346" height="349"/>
+                            <size key="itemSize" width="346" height="306"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="favoriteCell" id="BLF-Ba-8W1" customClass="FavoritesViewCell" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target">
-                                <rect key="frame" x="14.5" y="8" width="346" height="349"/>
+                                <rect key="frame" x="14.5" y="8" width="346" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Be2-AJ-JlS">
-                                    <rect key="frame" x="0.0" y="0.0" width="346" height="349"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="346" height="306"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWG-kt-rYb">
-                                            <rect key="frame" x="24.5" y="20" width="297" height="170"/>
+                                            <rect key="frame" x="24.5" y="69" width="297" height="170"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="170" id="WBl-Ka-Jzz"/>
                                                 <constraint firstAttribute="width" constant="297" id="ieM-mr-sxF"/>
@@ -443,10 +443,10 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oJM-OA-EQK">
-                                            <rect key="frame" x="24.5" y="194" width="297" height="16"/>
+                                            <rect key="frame" x="24.5" y="243" width="297" height="16"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atD-XA-YBi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="97" height="16"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="5sQ-9R-u5U"/>
                                                         <constraint firstAttribute="height" constant="60" id="CHz-T9-W02"/>
@@ -460,7 +460,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Evu-eQ-ac6">
-                                                    <rect key="frame" x="104.5" y="0.0" width="97" height="16"/>
+                                                    <rect key="frame" x="101.5" y="0.0" width="94" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="eye.circle" catalog="system"/>
@@ -469,7 +469,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tkR-gm-ajT">
-                                                    <rect key="frame" x="209.5" y="0.0" width="96.5" height="16"/>
+                                                    <rect key="frame" x="203.5" y="0.0" width="93.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="checkmark.circle" catalog="system"/>
@@ -485,32 +485,32 @@
                                                 <constraint firstItem="Evu-eQ-ac6" firstAttribute="width" secondItem="atD-XA-YBi" secondAttribute="width" id="w36-Kb-ztU"/>
                                             </constraints>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJO-d0-VfZ">
-                                            <rect key="frame" x="24.5" y="238.5" width="297" height="106.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJO-d0-VfZ">
+                                            <rect key="frame" x="24.5" y="20" width="297" height="41"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="textColor" name="BBTRedish"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2g-yo-Hqz">
-                                            <rect key="frame" x="24.5" y="214" width="56.5" height="20.5"/>
+                                            <rect key="frame" x="24.5" y="263" width="56.5" height="20.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" name="BBTGreen"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gf-1D-2n4" userLabel="SeasonNumber">
-                                            <rect key="frame" x="89" y="214" width="7.5" height="20.5"/>
+                                            <rect key="frame" x="89" y="263" width="7.5" height="20.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" name="BBTRedish"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pf-CG-W0f">
-                                            <rect key="frame" x="245" y="214" width="61" height="20.5"/>
+                                            <rect key="frame" x="245" y="263" width="61" height="20.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" name="BBTGreen"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJn-eD-cw9" userLabel="EpisodeNumber">
-                                            <rect key="frame" x="314" y="214" width="7.5" height="20.5"/>
+                                            <rect key="frame" x="314" y="263" width="7.5" height="20.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" name="BBTRedish"/>
                                             <nil key="highlightedColor"/>
@@ -525,22 +525,22 @@
                                         <constraint firstItem="7Gf-1D-2n4" firstAttribute="leading" secondItem="k2g-yo-Hqz" secondAttribute="trailing" constant="8" symbolic="YES" id="C8S-Km-aPo"/>
                                         <constraint firstItem="7Gf-1D-2n4" firstAttribute="top" secondItem="k2g-yo-Hqz" secondAttribute="top" id="Cu4-Ox-Lih"/>
                                         <constraint firstItem="OWG-kt-rYb" firstAttribute="centerX" secondItem="Be2-AJ-JlS" secondAttribute="centerX" id="EDt-Vn-EIq"/>
-                                        <constraint firstItem="OWG-kt-rYb" firstAttribute="top" secondItem="Be2-AJ-JlS" secondAttribute="top" constant="20" symbolic="YES" id="Fwu-rC-yJr"/>
+                                        <constraint firstItem="OWG-kt-rYb" firstAttribute="top" secondItem="HJO-d0-VfZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Fwu-rC-yJr"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OWG-kt-rYb" secondAttribute="trailing" constant="20" symbolic="YES" id="Hef-eR-tEI"/>
                                         <constraint firstItem="oJM-OA-EQK" firstAttribute="top" secondItem="OWG-kt-rYb" secondAttribute="bottom" constant="4" id="QVX-Db-y1k"/>
                                         <constraint firstItem="LJn-eD-cw9" firstAttribute="leading" secondItem="7Pf-CG-W0f" secondAttribute="trailing" constant="7.9999999999999432" id="Wou-cx-0Yy"/>
                                         <constraint firstItem="LJn-eD-cw9" firstAttribute="leading" secondItem="7Pf-CG-W0f" secondAttribute="trailing" constant="8" symbolic="YES" id="dqt-8d-6vg"/>
                                         <constraint firstItem="k2g-yo-Hqz" firstAttribute="top" secondItem="oJM-OA-EQK" secondAttribute="bottom" constant="4" id="h3X-YZ-ioY"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k2g-yo-Hqz" secondAttribute="bottom" constant="20" symbolic="YES" id="lWH-Dc-5Bk"/>
                                         <constraint firstItem="k2g-yo-Hqz" firstAttribute="leading" secondItem="OWG-kt-rYb" secondAttribute="leading" id="nn8-ms-Nis"/>
-                                        <constraint firstAttribute="bottom" secondItem="HJO-d0-VfZ" secondAttribute="bottom" constant="4" id="r3w-zl-ttp"/>
-                                        <constraint firstItem="HJO-d0-VfZ" firstAttribute="top" secondItem="k2g-yo-Hqz" secondAttribute="bottom" constant="4" id="r99-nE-9C7"/>
+                                        <constraint firstItem="HJO-d0-VfZ" firstAttribute="top" secondItem="Be2-AJ-JlS" secondAttribute="top" constant="20" symbolic="YES" id="r99-nE-9C7"/>
                                         <constraint firstItem="7Pf-CG-W0f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Gf-1D-2n4" secondAttribute="trailing" constant="8" symbolic="YES" id="sfU-eY-w7q"/>
                                         <constraint firstItem="oJM-OA-EQK" firstAttribute="leading" secondItem="OWG-kt-rYb" secondAttribute="leading" id="vbq-Ge-1WS"/>
                                         <constraint firstItem="OWG-kt-rYb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Be2-AJ-JlS" secondAttribute="leading" constant="20" symbolic="YES" id="wNq-52-kND"/>
                                         <constraint firstItem="HJO-d0-VfZ" firstAttribute="leading" secondItem="OWG-kt-rYb" secondAttribute="leading" id="zLp-nh-GAA"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="346" height="349"/>
+                                <size key="customSize" width="346" height="306"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" name="BBTBlack"/>
