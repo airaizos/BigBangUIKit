@@ -13,7 +13,14 @@ final class FavoritesViewCell: UICollectionViewCell {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var watchedButton: UIButton!
     @IBOutlet weak var checkButton: UIButton!
-    @IBOutlet weak var ratingSlider: UISlider!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    @IBOutlet weak var seasonNumberLabel: UILabel!
+    @IBOutlet weak var episodeNumberLabel: UILabel!
+    
+    
     
     override class func awakeFromNib() {
         
@@ -23,6 +30,12 @@ final class FavoritesViewCell: UICollectionViewCell {
         episodeImage.image = nil
         favoriteButton.setImage(nil, for: .normal)
         watchedButton.setImage(nil, for: .normal)
-        ratingSlider.setThumbImage(nil, for: .normal)
+        checkButton.setTitle(nil, for: .normal)
+        nameLabel.text = nil
+        seasonNumberLabel.text = nil
+        episodeNumberLabel.text = nil
+        
     }
+    
+    
 }

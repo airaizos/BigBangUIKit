@@ -80,7 +80,7 @@ final class DetailViewController: UIViewController {
     @IBAction func favoritePressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.toggleFavorite(id: episode.id)
-     //   favoriteButton.setTitleColor(UIColor(named: "BBT375"), for: .normal)
+
         
     }
 
@@ -101,7 +101,6 @@ final class DetailViewController: UIViewController {
     @IBAction func rating1Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 1)
-        print(episode.id,modelLogic.getRating(id: episode.id))
         
     }
     

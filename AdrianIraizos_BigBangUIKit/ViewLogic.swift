@@ -22,24 +22,24 @@ final class ViewLogic {
     
     var symbo = UIImage.SymbolConfiguration(paletteColors: [.BBTYellow!,.BBTYellow!.withAlphaComponent(0.5)])
     
-    func getFavoriteImage(episodeId:Int) -> UIImage {
+    func getFavoriteImage(episodeId:Int, font: UIFont.TextStyle = .title3) -> UIImage {
         switch modelLogic.isFavorite(id: episodeId) {
-        case true: return buttonWithSymbolConfiguration(systemName: "star.circle", color: .BBTYellow!)
+        case true: return buttonWithSymbolConfiguration(systemName: "star.circle", color: .BBTYellow!,font: font)
             
         case false: return buttonWithSymbolConfiguration(systemName: "star.slash", color: .BBTPale!)
           
         }
     }
-    func getWatchedImage(episodeId:Int) -> UIImage {
+    func getWatchedImage(episodeId:Int,font: UIFont.TextStyle = .title3) -> UIImage {
         switch modelLogic.isWatched(id: episodeId) {
-        case true: return buttonWithSymbolConfiguration(systemName: "eye.circle", color: .BBTGreen!)
+        case true: return buttonWithSymbolConfiguration(systemName: "eye.circle", color: .BBTGreen!, font: font)
             
         case false: return buttonWithSymbolConfiguration(systemName: "eye.slash.circle", color: .BBTPale!)
         }
     }
-    func getCheckedImage(episodeId:Int) -> UIImage {
+    func getCheckedImage(episodeId:Int, font: UIFont.TextStyle = .title3) -> UIImage {
         switch modelLogic.isCheck(id: episodeId) {
-        case true: return buttonWithSymbolConfiguration(systemName: "checkmark.circle", color: .BBTGreenish!)
+        case true: return buttonWithSymbolConfiguration(systemName: "checkmark.circle", color: .BBTGreenish!, font: font)
 
         case false: return buttonWithSymbolConfiguration(systemName: "x.circle", color: .BBTPale!)
         }
@@ -69,9 +69,9 @@ final class ViewLogic {
         return UIImage(named: episode.image) ?? UIImage(systemName: "ellipsis.rectangle")!
     }
     
-    func buttonWithSymbolConfiguration(systemName: String, color: UIColor) -> UIImage {
+    func buttonWithSymbolConfiguration(systemName: String, color: UIColor, font: UIFont.TextStyle = .title3) -> UIImage {
          
-        UIImage(systemName: systemName, withConfiguration: UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .title3)).applying(UIImage.SymbolConfiguration(weight: .light)).applying(UIImage.SymbolConfiguration(paletteColors: [color, color.withAlphaComponent(0.4)])))!
+        UIImage(systemName: systemName, withConfiguration: UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .title2)).applying(UIImage.SymbolConfiguration(weight: .light)).applying(UIImage.SymbolConfiguration(paletteColors: [color, color.withAlphaComponent(0.4)])))!
      }
      
     

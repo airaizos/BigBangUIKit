@@ -23,11 +23,7 @@ final class SeasonsTableViewController: UITableViewController {
             cell.nameLabel.text = episode.name
             cell.episodeNumberLabel.text = episode.episodeString
             cell.airDateLabel.text = episode.airDateString
-          
-            //favoriteButton
-            //markButton
-            //watchedbutton
-            //ratingSlider
+ 
             return cell
         }
     }()
