@@ -39,7 +39,7 @@ final class ModelLogic {
         }
     }
     
-    private var ratings:Set<Rating> {
+    private var ratings:[Int:Int] {
         didSet {
             try? persistence.saveRatings(ratings)
             NotificationCenter.default.post(name: .ratingChanged,object: nil)
@@ -58,7 +58,7 @@ final class ModelLogic {
             self.episodes = []
             self.favorites = []
             self.watched = []
-            self.ratings = []
+            self.ratings = [:]
             self.checked = []
             
         }
@@ -131,21 +131,21 @@ final class ModelLogic {
     }
     
     func getRating(id:Int) -> Int {
-        let ratings = ratings.filter { $0.id == id }
-        guard let rating = ratings.first?.rating else { return 0 }
+        let ratings = ratings.filter { $0.key == id }
+        guard let rating = ratings[id] else { return 0 }
         return rating
     }
     
     func saveRating(id:Int,value:Int) {
-        ratings.insert(Rating(id: id, rating: value))
+        ratings[id] = value
     }
     
     func ratingPressed(episodeId: Int,rating:Int) {
-        print("contains",ratings.contains(Rating(id: episodeId, rating: 1)))
         
-        ratings.remove(Rating(id: episodeId, rating: 1))
-        print("contains",ratings.contains(Rating(id: episodeId, rating: 1)))
-        ratings.insert(Rating(id: episodeId, rating: rating))
+        
+//ratings.removeValue(forKey: episodeId)
+
+        ratings[episodeId] = rating
         
         
     }

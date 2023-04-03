@@ -53,13 +53,14 @@ final class ModelPersistence {
         try data.write(to: watchedDocument, options: .atomic)
     }
     
-    func loadRatings() throws -> Set<Rating> {
-        guard FileManager.default.fileExists(atPath: ratingsDocument.path()) else {  return [] }
+    func loadRatings() throws -> [Int:Int] {
+        guard FileManager.default.fileExists(atPath: ratingsDocument.path()) else {  return [:] }
+        print(ratingsDocument.path())
         let data = try Data(contentsOf: ratingsDocument)
-       return Set(try JSONDecoder().decode([Rating].self, from: data))
+        return try JSONDecoder().decode([Int:Int].self, from: data)
     }
     
-    func saveRatings(_ ratings: Set<Rating>) throws {
+    func saveRatings(_ ratings: [Int:Int]) throws {
         let data = try JSONEncoder().encode(ratings)
         try data.write(to: ratingsDocument, options: .atomic)
     }

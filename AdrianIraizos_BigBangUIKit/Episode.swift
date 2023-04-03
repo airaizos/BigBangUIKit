@@ -48,7 +48,9 @@ struct Checked:Codable {
     let ids:[Int]
 }
 
-struct Rating:Codable,Hashable {
-    let id:Int
-    let rating:Int
-}
+/*
+ struct Rating:Codable,Hashable {
+ let id:Int
+ let rating:Int
+ }
+ */
