@@ -28,6 +28,16 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         }
     }()
     
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "sectionHeader") as! TableViewHeader
+        
+        let season = "\(section + 1)"
+        view.seasonNumberLabel.text = season
+        view.seasonImage.image = UIImage(named: "season\(season)")
+        return view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +46,12 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         navigationItem.searchController = searchController
         tableView.dataSource = dataSource
         dataSource.apply(modelLogic.snapshot)
+        
+        //Header
+        let sectionHeader = UINib(nibName: "TableViewHeader", bundle: nil)
+        tableView.register(sectionHeader, forHeaderFooterViewReuseIdentifier: "sectionHeader")
+        
+        
     }
     
     

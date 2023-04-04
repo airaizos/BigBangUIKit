@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A04435729DC0D60005CD724 /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04435629DC0D60005CD724 /* TableViewHeader.swift */; };
+		3A04435929DC0D82005CD724 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A04435829DC0D82005CD724 /* TableViewHeader.xib */; };
 		3A044EC329D5C6D200B01D34 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC229D5C6D200B01D34 /* FavoritesCollectionViewController.swift */; };
 		3A044EC529D5CD8400B01D34 /* FavoritesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */; };
 		3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A04435629DC0D60005CD724 /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
+		3A04435829DC0D82005CD724 /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
 		3A044EC229D5C6D200B01D34 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
 		3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewCell.swift; sourceTree = "<group>"; };
 		3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogic.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			children = (
 				3A5305CF29D4768900C11B7A /* TableViewCell.swift */,
 				3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */,
+				3A04435629DC0D60005CD724 /* TableViewHeader.swift */,
+				3A04435829DC0D82005CD724 /* TableViewHeader.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			files = (
 				3A5305C129D4526D00C11B7A /* LaunchScreen.storyboard in Resources */,
 				3A5305BE29D4526D00C11B7A /* Assets.xcassets in Resources */,
+				3A04435929DC0D82005CD724 /* TableViewHeader.xib in Resources */,
 				3A5305CA29D452B200C11B7A /* BigBang.json in Resources */,
 				3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */,
 			);
@@ -218,6 +225,7 @@
 				3A044EC529D5CD8400B01D34 /* FavoritesViewCell.swift in Sources */,
 				3A5305D629D476DC00C11B7A /* Episode.swift in Sources */,
 				3A044EC329D5C6D200B01D34 /* FavoritesCollectionViewController.swift in Sources */,
+				3A04435729DC0D60005CD724 /* TableViewHeader.swift in Sources */,
 				3A5305DC29D47B7300C11B7A /* SeasonsTableViewController.swift in Sources */,
 				3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */,
 				3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */,
