@@ -55,7 +55,6 @@ final class ModelPersistence {
     
     func loadRatings() throws -> [Int:Int] {
         guard FileManager.default.fileExists(atPath: ratingsDocument.path()) else {  return [:] }
-        print(ratingsDocument.path())
         let data = try Data(contentsOf: ratingsDocument)
         return try JSONDecoder().decode([Int:Int].self, from: data)
     }

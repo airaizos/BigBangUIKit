@@ -102,4 +102,15 @@ final class FavoritesCollectionViewController: UICollectionViewController {
         modelLogic.toggleChecked(id: sender.tag)
         dataSource.apply(modelLogic.favoritesSnapshot)
     }
+    
+    
+    
+    @IBSegueAction func showFavDetail(_ coder: NSCoder) -> DetailViewController? {
+        let detail = DetailViewController(coder: coder)
+        guard let indexPath = collectionView.indexPathsForSelectedItems?.first else {  return nil }
+        
+        detail?.selectedEpisode = dataSource.itemIdentifier(for: indexPath)
+        
+        return detail
+    }
 }
