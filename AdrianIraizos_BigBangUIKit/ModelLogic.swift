@@ -75,6 +75,16 @@ final class ModelLogic {
         return snapshot
     }
     
+    var favoritesSnapshot: NSDiffableDataSourceSnapshot<String,Episode> {
+        var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
+        snapshot.appendSections([""])
+        let episodes = episodes.filter { episode in
+            favorites.contains(episode.id)
+        }
+        snapshot.appendItems(episodes)
+        return snapshot
+    }
+    
     //Temporadas??
     func getSnapshotForSeason(number:Int) -> NSDiffableDataSourceSnapshot<String,Episode> {
         var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()

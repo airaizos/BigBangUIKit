@@ -14,6 +14,7 @@ final class DetailViewController: UIViewController {
     
     var selectedEpisode:Episode?
     
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var seasonNumberLabel: UILabel!
     @IBOutlet weak var episodeImage: UIImageView!
@@ -80,7 +81,8 @@ final class DetailViewController: UIViewController {
     @IBAction func favoritePressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.toggleFavorite(id: episode.id)
-
+        
+        
         
     }
 
@@ -107,28 +109,26 @@ final class DetailViewController: UIViewController {
     @IBAction func rating2Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 2)
-        print(episode.id,modelLogic.getRating(id: episode.id))
+       
     }
     
     
     @IBAction func rating3Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 3)
-        print(episode.id,modelLogic.getRating(id: episode.id))
+
     }
     
     
     @IBAction func rating4Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 4)
-        print(episode.id,modelLogic.getRating(id: episode.id))
     
     }
     
     @IBAction func rating5Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 5)
-        print(episode.id,modelLogic.getRating(id: episode.id))
     }
     
     
