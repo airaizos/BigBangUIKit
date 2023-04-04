@@ -32,6 +32,7 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "sectionHeader") as! TableViewHeader
         
+        
         let season = "\(section + 1)"
         view.seasonNumberLabel.text = season
         view.seasonImage.image = UIImage(named: "season\(season)")
@@ -50,8 +51,6 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         //Header
         let sectionHeader = UINib(nibName: "TableViewHeader", bundle: nil)
         tableView.register(sectionHeader, forHeaderFooterViewReuseIdentifier: "sectionHeader")
-        
-        
     }
     
     
