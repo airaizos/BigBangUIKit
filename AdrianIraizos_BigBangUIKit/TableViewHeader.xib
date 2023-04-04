@@ -16,16 +16,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6IS-1b-2Jb">
-                    <rect key="frame" x="123.33333333333333" y="-8" width="146.33333333333337" height="84"/>
+                    <rect key="frame" x="123.33333333333333" y="4" width="146.33333333333337" height="72"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0O-7s-OSC">
-                            <rect key="frame" x="0.0" y="0.0" width="90" height="84"/>
+                            <rect key="frame" x="0.0" y="0.0" width="90" height="72"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                             <color key="textColor" name="BBTGreen"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIJ-c1-gt4">
-                            <rect key="frame" x="110.00000000000001" y="0.0" width="36.333333333333329" height="84"/>
+                            <rect key="frame" x="110.00000000000001" y="0.0" width="36.333333333333329" height="72"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                             <color key="textColor" name="BBTRed"/>
                             <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                     </subviews>
                 </stackView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-sY-avs">
-                    <rect key="frame" x="289.66666666666669" y="11.666666666666664" width="70" height="45"/>
+                    <rect key="frame" x="289.66666666666669" y="17.666666666666671" width="70" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="bda-57-MFN"/>
                         <constraint firstAttribute="width" constant="70" id="lbM-9n-cxJ"/>
@@ -49,7 +49,7 @@
             <color key="backgroundColor" name="BBTWhite"/>
             <constraints>
                 <constraint firstItem="6IS-1b-2Jb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3tV-Yy-Ux2"/>
-                <constraint firstItem="6IS-1b-2Jb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-8" id="4d0-xa-8cN"/>
+                <constraint firstItem="6IS-1b-2Jb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="4d0-xa-8cN"/>
                 <constraint firstAttribute="bottom" secondItem="6IS-1b-2Jb" secondAttribute="bottom" constant="4" id="Yak-6W-Xjw"/>
                 <constraint firstItem="bc4-sY-avs" firstAttribute="leading" secondItem="6IS-1b-2Jb" secondAttribute="trailing" constant="20" id="c4i-he-QQs"/>
                 <constraint firstItem="bc4-sY-avs" firstAttribute="centerY" secondItem="6IS-1b-2Jb" secondAttribute="centerY" id="nF9-yB-xLR"/>

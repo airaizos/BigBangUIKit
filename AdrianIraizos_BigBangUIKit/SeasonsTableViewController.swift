@@ -29,18 +29,22 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
     }()
     
     
+    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "sectionHeader") as! TableViewHeader
-        
         
         let season = "\(section + 1)"
         view.seasonNumberLabel.text = season
         view.seasonImage.image = UIImage(named: "season\(season)")
+        
+        view.contentView.backgroundColor = .BBTPale
+        
         return view
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         let searchController = viewLogic.getSearchBar()
         searchController.searchResultsUpdater = self
@@ -51,6 +55,8 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         //Header
         let sectionHeader = UINib(nibName: "TableViewHeader", bundle: nil)
         tableView.register(sectionHeader, forHeaderFooterViewReuseIdentifier: "sectionHeader")
+        
+        
     }
     
     
@@ -59,6 +65,48 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         modelLogic.searchText = search
         dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
     }
+    
+    // MARK: Swipe Actions
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let episode = dataSource.itemIdentifier(for: indexPath) else { return nil }
+        
+        let isFavorite = modelLogic.isFavorite(id: episode.id)
+        let favoriteAction = UIContextualAction(style: .normal, title: isFavorite ? "Mark as Not Favorite" : "Mark as Favorite") { [self] _,_, handler in
+            
+            modelLogic.toggleFavorite(id: episode.id)
+            handler(true)
+        }
+        favoriteAction.image = viewLogic.buttonWithSymbolConfiguration(systemName: "star.circle", color: .BBTYellow!)
+        favoriteAction.backgroundColor = .BBTOcher
+        
+        let isWatched = modelLogic.isWatched(id: episode.id)
+        let watchedAction = UIContextualAction(style: .normal, title: isWatched ? "Mark as Not Watched" : "Mark as Watched") { [self]  _,_, handler in
+            modelLogic.toggleWatch(id: episode.id)
+            handler(true)
+        }
+        watchedAction.image = viewLogic.buttonWithSymbolConfiguration(systemName: "eye.circle", color: .BBTWhite!)
+        watchedAction.backgroundColor = .BBTGreen
+        
+        return UISwipeActionsConfiguration(actions: [favoriteAction,watchedAction])
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        guard let episode = dataSource.itemIdentifier(for: indexPath) else { return nil }
+        
+        let isChecked = modelLogic.isCheck(id: episode.id)
+        let checkedAction = UIContextualAction(style: .normal, title: isChecked ? "Mark as Not Checked" : "Mark as Checked") { [self] _,_, handler in
+            modelLogic.toggleChecked(id: episode.id)
+            
+            handler(true)
+        }
+        
+        checkedAction.image = viewLogic.buttonWithSymbolConfiguration(systemName: "checkmark.circle", color: .BBTYellow!)
+        checkedAction.backgroundColor = .BBTBlack
+        return UISwipeActionsConfiguration(actions: [checkedAction])
+    }
+    
+    
+    
     
     
     @IBSegueAction func showDetail(_ coder: NSCoder) -> DetailViewController? {

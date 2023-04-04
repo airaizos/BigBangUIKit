@@ -16,12 +16,6 @@ final class ViewLogic {
     let modelLogic = ModelLogic.shared
     var symbolConfiguration =  UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .title3))
     
-    //UIImage(systemName: "star.circle", configuration: UIImage.SymbolConfiguration(weight: .light))?.applyingSymbolConfiguration(UIImage.SymbolConfiguration(paletteColors:[.systemOrange, .teal, .systemYellow]))
-    
-    var lightConfig = UIImage.SymbolConfiguration(weight: .light)
-    
-    var symbo = UIImage.SymbolConfiguration(paletteColors: [.BBTYellow!,.BBTYellow!.withAlphaComponent(0.5)])
-    
     func getFavoriteImage(episodeId:Int, font: UIFont.TextStyle = .title3) -> UIImage {
         switch modelLogic.isFavorite(id: episodeId) {
         case true: return buttonWithSymbolConfiguration(systemName: "star.circle", color: .BBTYellow!,font: font)
@@ -61,9 +55,6 @@ final class ViewLogic {
         }
         return inactive
     }
-    
-    
-    
     
     func getImageFrom(episode:Episode) -> UIImage {
         return UIImage(named: episode.image) ?? UIImage(systemName: "ellipsis.rectangle")!
