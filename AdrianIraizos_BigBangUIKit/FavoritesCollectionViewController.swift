@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 final class FavoritesCollectionViewController: UICollectionViewController {
     
     private let reuseIdentifier = "favoriteCell"
@@ -35,8 +33,6 @@ final class FavoritesCollectionViewController: UICollectionViewController {
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.collectionView.reloadData()
         }
-        
-        
     }
     
     func getLayout() -> UICollectionViewCompositionalLayout {
@@ -53,8 +49,6 @@ final class FavoritesCollectionViewController: UICollectionViewController {
         let layout = UICollectionViewCompositionalLayout.list(using: listConfig)
         return layout
     }
-    
-    
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         modelLogic.getFavoritesCount()
@@ -90,16 +84,13 @@ final class FavoritesCollectionViewController: UICollectionViewController {
     }
     
     @objc func favoritePressed(_ sender: UIButton) {
-        print("favorite TAG",sender.tag,sender)
         modelLogic.toggleFavorite(id: sender.tag)
         
     }
     @objc func watchedPressed(_ sender: UIButton) {
-        print("WATCHED TAG",sender.tag,sender)
         modelLogic.toggleWatch(id: sender.tag)
     }
     @objc func checkedPressed(_ sender: UIButton) {
-        print("checked TAG",sender.tag,sender)
         modelLogic.toggleChecked(id: sender.tag)
     }
     
