@@ -33,7 +33,7 @@ final class ViewLogic {
     }
     func getCheckedImage(episodeId:Int, font: UIFont.TextStyle = .title3) -> UIImage {
         switch modelLogic.isCheck(id: episodeId) {
-        case true: return buttonWithSymbolConfiguration(systemName: "checkmark.circle", color: .BBTGreenish!, font: font)
+        case true: return buttonWithSymbolConfiguration(systemName: "checkmark.circle", color: .BBTBlue!, font: font)
 
         case false: return buttonWithSymbolConfiguration(systemName: "x.circle", color: .BBTPale!)
         }
