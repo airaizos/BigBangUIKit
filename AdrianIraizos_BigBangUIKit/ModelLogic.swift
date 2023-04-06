@@ -79,9 +79,9 @@ final class ModelLogic {
         var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
         snapshot.appendSections([""])
         /*
-        let episodes = episodes.filter { episode in
-            favorites.contains(episode.id)
-        }
+         let episodes = episodes.filter { episode in
+         favorites.contains(episode.id)
+         }
          */
         let favoritesIds = favoritesFilteredEpisodes.filter { id in
             favorites.contains(id)
@@ -155,11 +155,8 @@ final class ModelLogic {
     
     var searchText = ""
     var filteredEpisodes:[Episode] {
-        //list id
-        //let listFiltered = listFilterEpisodes.filter { id in episodes.contains { $0.id == id } }
-     //   let listFiltered = episodes.filter { episode in listFilterEpisodes.contains { episode.id == $0 }}
         
-       return listFilterEpisodes.filter {
+        return listFilterEpisodes.filter {
             switch searchText.isEmpty {
             case true: return true
             case false: return
@@ -188,20 +185,32 @@ final class ModelLogic {
     //MARK: BarButtons Items
     //All Watched, NotWatched
     var watchedBarButtonState: BarButtonAction = .all
+    var checkedBarButtonState: BarButtonAction = .all
+    
     enum BarButtonAction {
         case all, marked, unmarked
     }
     
-    // solo devuelve los watched
     var listFilterEpisodes:[Episode] {
+        
         episodes.filter { [self] episode in
-            
-            switch watchedBarButtonState {
-            case .all: return true
-            case .marked: return watched.contains { episode.id == $0 }
-
-            case .unmarked: return watched.allSatisfy { $0 != episode.id }
+            switch (checkedBarButtonState,watchedBarButtonState) {
+            case (.all,.all): return true
+            case (.all,.marked): return watched.contains { episode.id == $0 }
+            case (.all, .unmarked): return watched.allSatisfy { $0 != episode.id }
+            case (.marked, .marked): return checked.contains { episode.id == $0 } && watched.contains { episode.id == $0 }
+            case (.marked, .unmarked): return checked.contains { episode.id == $0 } && watched.allSatisfy { $0 != episode.id }
+            case (.marked,.all): return checked.contains { episode.id == $0 }
+            case (.unmarked, .marked): return checked.allSatisfy { $0 != episode.id } && watched.contains { episode.id == $0 }
+            case (.unmarked, .unmarked): return checked.allSatisfy { $0 != episode.id } && watched.allSatisfy { episode.id != $0 }
+            case (.unmarked, .all): return checked.allSatisfy { $0 != episode.id }
+                
             }
+            
         }
     }
+    
+    
+    
+    
 }

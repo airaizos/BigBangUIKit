@@ -118,7 +118,9 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
     
     
     @IBAction func CheckedButtonPressed(_ sender: UIBarButtonItem) {
-        CheckedButtonLabel.image = UIImage(systemName: "x.circle")
+        viewLogic.checkedBarButtonPressed()
+        CheckedButtonLabel.image = viewLogic.getCheckedBarButtonImage()
+        dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
     }
     
     
