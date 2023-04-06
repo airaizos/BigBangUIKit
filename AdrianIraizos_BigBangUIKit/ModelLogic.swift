@@ -54,7 +54,7 @@ final class ModelLogic {
             self.ratings = try persistence.loadRatings()
             self.checked = try persistence.loadChecks()
         } catch {
-           
+            
             self.episodes = []
             self.favorites = []
             self.watched = []
@@ -78,23 +78,20 @@ final class ModelLogic {
     var favoritesSnapshot: NSDiffableDataSourceSnapshot<String,Episode> {
         var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
         snapshot.appendSections([""])
+        /*
         let episodes = episodes.filter { episode in
             favorites.contains(episode.id)
         }
+         */
+        let favoritesIds = favoritesFilteredEpisodes.filter { id in
+            favorites.contains(id)
+        }
+        let episodes = episodes.filter {  episode in
+            favoritesIds.contains(episode.id)
+        }
+        
         snapshot.appendItems(episodes)
         return snapshot
-    }
-    
-    //Temporadas??
-    func getSnapshotForSeason(number:Int) -> NSDiffableDataSourceSnapshot<String,Episode> {
-        var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
-        let episodes = filteredEpisodes.filter { $0.season == number }
-        snapshot.appendItems(episodes, toSection: "\(number)")
-        return snapshot
-    }
-    
-    var snapshotSeasonOne:NSDiffableDataSourceSnapshot<String,Episode> {
-        return getSnapshotForSeason(number: 1)
     }
     
     //MARK: Favoritos
@@ -154,7 +151,7 @@ final class ModelLogic {
         ratings[episodeId] = rating
     }
     
-    //MARK: SearchBar
+    //MARK: SearchBarTableView
     
     var searchText = ""
     var filteredEpisodes:[Episode] {
@@ -167,8 +164,21 @@ final class ModelLogic {
                 $0.episodeString.contains(searchText) ||
                 $0.seasonString.contains(searchText) ||
                 $0.airDateString.contains(searchText)
-
+                
             }
         }
     }
+    
+    //MARK: SearchBarFavorites
+    var favoritesFilteredEpisodes:[Int] {
+        favorites.filter { id in
+            switch searchText.isEmpty {
+            case true: return true
+            case false:
+                guard let favoriteEpisode = episodes.first (where: { $0.id == id }) else { return false }
+                return favoriteEpisode.name.lowercased().trimmingCharacters(in: .whitespaces).contains(searchText.lowercased())
+            }
+        }
+    }
+    
 }

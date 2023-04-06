@@ -45,7 +45,6 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let searchController = viewLogic.getSearchBar()
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
@@ -104,10 +103,6 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         checkedAction.backgroundColor = .BBTBlack
         return UISwipeActionsConfiguration(actions: [checkedAction])
     }
-    
-    
-    
-    
     
     @IBSegueAction func showDetail(_ coder: NSCoder) -> DetailViewController? {
         let detail = DetailViewController(coder: coder)

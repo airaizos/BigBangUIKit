@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FavoritesCollectionViewController: UICollectionViewController {
+final class FavoritesCollectionViewController: UICollectionViewController, UISearchResultsUpdating {
     
     private let reuseIdentifier = "favoriteCell"
     
@@ -51,6 +51,12 @@ final class FavoritesCollectionViewController: UICollectionViewController {
         
         self.collectionView.setCollectionViewLayout(getLayout(), animated: false)
         
+        // Search
+        let searchController = viewLogic.getSearchBar()
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+       
+        
         collectionView.dataSource = dataSource
         dataSource.apply(modelLogic.favoritesSnapshot)
         
@@ -68,6 +74,9 @@ final class FavoritesCollectionViewController: UICollectionViewController {
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.collectionView.reloadData()
         }
+        
+        
+      
     }
     
     func getLayout() -> UICollectionViewCompositionalLayout {
@@ -101,6 +110,14 @@ final class FavoritesCollectionViewController: UICollectionViewController {
     @objc func checkedPressed(_ sender: UIButton) {
         modelLogic.toggleChecked(id: sender.tag)
         dataSource.apply(modelLogic.favoritesSnapshot)
+    }
+    
+    //SearchBar
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let search = searchController.searchBar.text else { return }
+        modelLogic.searchText = search
+        dataSource.apply(modelLogic.favoritesSnapshot, animatingDifferences: true)
     }
     
     

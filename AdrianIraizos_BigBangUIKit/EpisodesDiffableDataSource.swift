@@ -9,7 +9,7 @@ import UIKit
 
 final class EpisodesDiffableDataSource: UITableViewDiffableDataSource<String,Episode> {
     
-    let modelLogic = ModelLogic.shared
+   // let modelLogic = ModelLogic.shared
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let snapshot = snapshot()
@@ -19,7 +19,7 @@ final class EpisodesDiffableDataSource: UITableViewDiffableDataSource<String,Epi
 
 
 final class EpisodeDiffableCollectionDataSource: UICollectionViewDiffableDataSource<String,Episode> {
-    let modelLogic = ModelLogic.shared
+ //   let modelLogic = ModelLogic.shared
 
     
 }
