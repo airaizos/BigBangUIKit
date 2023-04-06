@@ -121,7 +121,25 @@
                             <outlet property="delegate" destination="E6T-oq-oRY" id="I1G-np-gKY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Seasons" id="Xey-UO-iP0"/>
+                    <navigationItem key="navigationItem" title="Seasons" id="Xey-UO-iP0">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Watched" image="eye.square" catalog="system" id="P43-BR-agk">
+                                <connections>
+                                    <action selector="WatchedButtonPressed:" destination="E6T-oq-oRY" id="ieX-7i-dKQ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Checked" id="Q2N-aF-iip">
+                                <imageReference key="image" image="checkmark.square" catalog="system" variableValue="1"/>
+                                <connections>
+                                    <action selector="CheckedButtonPressed:" destination="E6T-oq-oRY" id="thM-Mu-fDu"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="CheckedButtonLabel" destination="Q2N-aF-iip" id="PrB-bn-mSC"/>
+                        <outlet property="WatchedButtonLabel" destination="P43-BR-agk" id="M77-Qp-cyR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVr-gh-8Ej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -778,7 +796,9 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="eye.circle" catalog="system" width="128" height="123"/>
+        <image name="eye.square" catalog="system" width="128" height="114"/>
         <image name="film.circle" catalog="system" width="128" height="123"/>
         <image name="heart.circle" catalog="system" width="128" height="123"/>
         <image name="star.circle" catalog="system" width="128" height="123"/>

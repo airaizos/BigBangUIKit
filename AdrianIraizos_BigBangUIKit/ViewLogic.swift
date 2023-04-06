@@ -74,5 +74,27 @@ final class ViewLogic {
         return search
     }
     
+    //MARK: BarButtons Items
+    //All Watched, NotWatched
+  
+    
+    func getWatchedBarButtonImage() -> UIImage {
+        switch modelLogic.watchedBarButtonState {
+        case .all: return UIImage(systemName: "eye.square")!
+        case .marked: return UIImage(systemName: "eye.circle")!
+        case .unmarked: return UIImage(systemName: "eye.slash.circle")!
+        }
+    }
+    
+    func watchedBarButtonPressed() {
+        switch modelLogic.watchedBarButtonState {
+        case .all: modelLogic.watchedBarButtonState = .marked
+        case .marked: modelLogic.watchedBarButtonState = .unmarked
+        case .unmarked: modelLogic.watchedBarButtonState = .all
+        }
+    }
+    
+    
+   
     
 }

@@ -155,7 +155,11 @@ final class ModelLogic {
     
     var searchText = ""
     var filteredEpisodes:[Episode] {
-        episodes.filter {
+        //list id
+        //let listFiltered = listFilterEpisodes.filter { id in episodes.contains { $0.id == id } }
+     //   let listFiltered = episodes.filter { episode in listFilterEpisodes.contains { episode.id == $0 }}
+        
+       return listFilterEpisodes.filter {
             switch searchText.isEmpty {
             case true: return true
             case false: return
@@ -181,4 +185,23 @@ final class ModelLogic {
         }
     }
     
+    //MARK: BarButtons Items
+    //All Watched, NotWatched
+    var watchedBarButtonState: BarButtonAction = .all
+    enum BarButtonAction {
+        case all, marked, unmarked
+    }
+    
+    // solo devuelve los watched
+    var listFilterEpisodes:[Episode] {
+        episodes.filter { [self] episode in
+            
+            switch watchedBarButtonState {
+            case .all: return true
+            case .marked: return watched.contains { episode.id == $0 }
+
+            case .unmarked: return watched.allSatisfy { $0 != episode.id }
+            }
+        }
+    }
 }

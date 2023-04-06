@@ -29,6 +29,10 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
     }()
     
     
+    @IBOutlet weak var WatchedButtonLabel: UIBarButtonItem!
+    
+    @IBOutlet weak var CheckedButtonLabel: UIBarButtonItem!
+    
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "sectionHeader") as! TableViewHeader
@@ -103,6 +107,20 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         checkedAction.backgroundColor = .BBTBlack
         return UISwipeActionsConfiguration(actions: [checkedAction])
     }
+    
+    //MARK: BarButtons
+    
+    @IBAction func WatchedButtonPressed(_ sender: UIBarButtonItem) {
+        viewLogic.watchedBarButtonPressed()
+        WatchedButtonLabel.image = viewLogic.getWatchedBarButtonImage()
+        dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
+    }
+    
+    
+    @IBAction func CheckedButtonPressed(_ sender: UIBarButtonItem) {
+        CheckedButtonLabel.image = UIImage(systemName: "x.circle")
+    }
+    
     
     @IBSegueAction func showDetail(_ coder: NSCoder) -> DetailViewController? {
         let detail = DetailViewController(coder: coder)
