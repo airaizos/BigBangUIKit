@@ -77,6 +77,7 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         let favoriteAction = UIContextualAction(style: .normal, title: isFavorite ? "Mark as Not Favorite" : "Mark as Favorite") { [self] _,_, handler in
             
             modelLogic.toggleFavorite(id: episode.id)
+            dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
             handler(true)
         }
         favoriteAction.image = viewLogic.buttonWithSymbolConfiguration(systemName: "star.circle", color: .BBTYellow!)
@@ -85,6 +86,7 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         let isWatched = modelLogic.isWatched(id: episode.id)
         let watchedAction = UIContextualAction(style: .normal, title: isWatched ? "Mark as Not Watched" : "Mark as Watched") { [self]  _,_, handler in
             modelLogic.toggleWatch(id: episode.id)
+            dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
             handler(true)
         }
         watchedAction.image = viewLogic.buttonWithSymbolConfiguration(systemName: "eye.circle", color: .BBTWhite!)
@@ -99,7 +101,7 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         let isChecked = modelLogic.isCheck(id: episode.id)
         let checkedAction = UIContextualAction(style: .normal, title: isChecked ? "Mark as Not Checked" : "Mark as Checked") { [self] _,_, handler in
             modelLogic.toggleChecked(id: episode.id)
-            
+            dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
             handler(true)
         }
         

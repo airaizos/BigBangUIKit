@@ -206,11 +206,6 @@ final class ModelLogic {
             case (.unmarked, .all): return checked.allSatisfy { $0 != episode.id }
                 
             }
-            
         }
     }
-    
-    
-    
-    
 }
