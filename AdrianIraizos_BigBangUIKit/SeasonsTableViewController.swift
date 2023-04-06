@@ -41,8 +41,6 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         view.seasonNumberLabel.text = season
         view.seasonImage.image = UIImage(named: "season\(season)")
         
-        view.contentView.backgroundColor = .BBTPale
-        
         return view
     }
     

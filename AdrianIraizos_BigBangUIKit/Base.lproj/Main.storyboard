@@ -35,16 +35,16 @@
         <scene sceneID="inl-Vb-IrT">
             <objects>
                 <tableViewController id="E6T-oq-oRY" customClass="SeasonsTableViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="u8S-KV-U6c">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="112" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="u8S-KV-U6c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BBTGray"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" rowHeight="113" id="uc0-DG-sNe" customClass="TableViewCell" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="375" height="113"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="uc0-DG-sNe" customClass="TableViewCell" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="375" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uc0-DG-sNe" id="1zN-fT-cpn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYz-B2-3Im">
@@ -93,18 +93,18 @@
                                     <constraints>
                                         <constraint firstItem="fYb-aW-uqC" firstAttribute="bottom" secondItem="DGT-nO-Mef" secondAttribute="bottom" id="74v-Ua-NeJ"/>
                                         <constraint firstItem="fYb-aW-uqC" firstAttribute="leading" secondItem="DGT-nO-Mef" secondAttribute="trailing" constant="8" id="BoE-EP-Dcl"/>
-                                        <constraint firstItem="fYb-aW-uqC" firstAttribute="trailing" secondItem="1zN-fT-cpn" secondAttribute="trailingMargin" constant="4" id="OEB-Qk-8Kb"/>
-                                        <constraint firstItem="ONy-Gg-dpB" firstAttribute="leading" secondItem="DGT-nO-Mef" secondAttribute="trailing" constant="8" id="ObH-Yv-flp"/>
+                                        <constraint firstItem="fYb-aW-uqC" firstAttribute="trailing" secondItem="1zN-fT-cpn" secondAttribute="trailingMargin" constant="4" identifier="AirdateTrailingMargin" id="OEB-Qk-8Kb"/>
+                                        <constraint firstItem="ONy-Gg-dpB" firstAttribute="leading" secondItem="DGT-nO-Mef" secondAttribute="trailing" constant="8" identifier="EpisodeImage-Identifier" id="ObH-Yv-flp"/>
                                         <constraint firstItem="cYz-B2-3Im" firstAttribute="leading" secondItem="DGT-nO-Mef" secondAttribute="trailing" constant="8" id="QPd-tI-rb7"/>
                                         <constraint firstItem="bCP-HO-eiY" firstAttribute="leading" secondItem="ONy-Gg-dpB" secondAttribute="trailing" constant="8" symbolic="YES" id="RBe-nb-oig"/>
                                         <constraint firstItem="bCP-HO-eiY" firstAttribute="top" secondItem="ONy-Gg-dpB" secondAttribute="top" id="cAR-tC-OIq"/>
-                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bCP-HO-eiY" secondAttribute="trailing" constant="8" id="dL6-6h-nle"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bCP-HO-eiY" secondAttribute="trailing" constant="8" identifier="EpisodeNumberTrailingMargin" id="dL6-6h-nle"/>
                                         <constraint firstItem="cYz-B2-3Im" firstAttribute="top" secondItem="DGT-nO-Mef" secondAttribute="top" id="db1-b3-Qza"/>
-                                        <constraint firstItem="DGT-nO-Mef" firstAttribute="top" secondItem="1zN-fT-cpn" secondAttribute="topMargin" constant="4" id="djO-Ht-F4F"/>
-                                        <constraint firstItem="DGT-nO-Mef" firstAttribute="bottom" secondItem="1zN-fT-cpn" secondAttribute="bottomMargin" constant="3" id="lWA-6Q-WKb"/>
+                                        <constraint firstItem="DGT-nO-Mef" firstAttribute="top" secondItem="1zN-fT-cpn" secondAttribute="topMargin" constant="4" identifier="EpisodeImage-Identifier" id="djO-Ht-F4F"/>
+                                        <constraint firstItem="DGT-nO-Mef" firstAttribute="bottom" secondItem="1zN-fT-cpn" secondAttribute="bottomMargin" constant="4" identifier="EpisodeImage-Identifier" id="lWA-6Q-WKb"/>
                                         <constraint firstItem="ONy-Gg-dpB" firstAttribute="top" secondItem="cYz-B2-3Im" secondAttribute="bottom" constant="4" id="onX-ir-gUu"/>
                                         <constraint firstItem="cYz-B2-3Im" firstAttribute="trailing" secondItem="1zN-fT-cpn" secondAttribute="trailingMargin" constant="8" id="pY6-rS-Rlo"/>
-                                        <constraint firstItem="DGT-nO-Mef" firstAttribute="leading" secondItem="1zN-fT-cpn" secondAttribute="leadingMargin" constant="4" id="whU-kE-InZ"/>
+                                        <constraint firstItem="DGT-nO-Mef" firstAttribute="leading" secondItem="1zN-fT-cpn" secondAttribute="leadingMargin" constant="4" identifier="EpisodeImage-Identifier" id="whU-kE-InZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

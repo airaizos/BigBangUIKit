@@ -46,7 +46,6 @@
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" name="BBTWhite"/>
             <constraints>
                 <constraint firstItem="6IS-1b-2Jb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3tV-Yy-Ux2"/>
                 <constraint firstItem="6IS-1b-2Jb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="4d0-xa-8cN"/>
@@ -68,9 +67,6 @@
         </namedColor>
         <namedColor name="BBTRed">
             <color red="0.75700002908706665" green="0.16899999976158142" blue="0.035000000149011612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="BBTWhite">
-            <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
