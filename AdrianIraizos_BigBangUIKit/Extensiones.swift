@@ -13,6 +13,8 @@ extension Notification.Name {
     static let watchedChanged = Notification.Name("WATCHEDCHANGED")
     static let checkChanged = Notification.Name("CHECKCHANGED")
     static let ratingChanged = Notification.Name("RATINGCHANGED")
+    
+    static let selectedEpisode = Notification.Name("SELECTEDEPISODE")
 }
 
 extension UIView {

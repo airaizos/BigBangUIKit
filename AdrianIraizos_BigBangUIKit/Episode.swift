@@ -48,9 +48,6 @@ struct Checked:Codable {
     let ids:[Int]
 }
 
-/*
- struct Rating:Codable,Hashable {
- let id:Int
- let rating:Int
- }
- */
+extension Episode {
+    static let test = Episode(id: 1646220, url: URL(string: "https://www.tvmaze.com/episodes/1646220/the-big-bang-theory-12x24-the-stockholm-syndrome")!, name: "The Stockholm Syndrome", season: 12, number: 24, airdate: "2019-05-16", runtime: 30, image: "493243", summary: "Bernadette and Wolowitz leave their kids for the first time; Penny and Leonard try to keep a secret; Sheldon and Amy stick together; and Koothrappali makes a new friend, as the gang travels together into an uncharted future.\n")
+}

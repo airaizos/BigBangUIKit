@@ -202,7 +202,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFk-Cs-j1j">
-                                <rect key="frame" x="48" y="330.66666666666669" width="56.333333333333314" height="20.333333333333314"/>
+                                <rect key="frame" x="48" y="330.66666666666669" width="56.333333333333343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="BBTGray"/>
                                 <nil key="highlightedColor"/>
@@ -214,7 +214,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKU-LO-dQx">
-                                <rect key="frame" x="112.33333333333331" y="330.66666666666669" width="21" height="24"/>
+                                <rect key="frame" x="112.33333333333333" y="330.66666666666669" width="20.999999999999986" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" name="BBTGreen"/>
                                 <nil key="highlightedColor"/>
@@ -366,7 +366,7 @@
                                 <color key="textColor" name="BBTGreen"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDm-us-9pO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDm-us-9pO">
                                 <rect key="frame" x="16" y="432.33333333333331" width="361" height="170.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -454,13 +454,13 @@
                                 <exclude reference="qg4-Bd-drC"/>
                                 <exclude reference="NBN-II-4a0"/>
                                 <exclude reference="pkM-j8-uIx"/>
-                                <exclude reference="Kks-fE-r9I"/>
-                                <exclude reference="Lm6-dT-2va"/>
-                                <exclude reference="aVo-9e-hgS"/>
                                 <exclude reference="dc8-1E-nhZ"/>
                                 <exclude reference="mnu-Wc-bpB"/>
                                 <exclude reference="oT7-t1-z71"/>
                                 <exclude reference="xFC-mD-oaZ"/>
+                                <exclude reference="Kks-fE-r9I"/>
+                                <exclude reference="Lm6-dT-2va"/>
+                                <exclude reference="aVo-9e-hgS"/>
                                 <exclude reference="txh-iu-orC"/>
                                 <exclude reference="zTE-aO-nH1"/>
                                 <exclude reference="UqE-GQ-04H"/>
@@ -492,12 +492,6 @@
                                 <include reference="NBN-II-4a0"/>
                                 <exclude reference="h73-LK-ret"/>
                                 <include reference="pkM-j8-uIx"/>
-                                <exclude reference="Fxz-da-Urg"/>
-                                <include reference="Kks-fE-r9I"/>
-                                <include reference="Lm6-dT-2va"/>
-                                <exclude reference="RwR-1i-HV1"/>
-                                <exclude reference="Vgw-Wj-k8H"/>
-                                <include reference="aVo-9e-hgS"/>
                                 <include reference="dc8-1E-nhZ"/>
                                 <exclude reference="gzV-pR-0mq"/>
                                 <include reference="mnu-Wc-bpB"/>
@@ -507,6 +501,12 @@
                                 <include reference="oT7-t1-z71"/>
                                 <exclude reference="pbF-zv-6gc"/>
                                 <include reference="xFC-mD-oaZ"/>
+                                <exclude reference="Fxz-da-Urg"/>
+                                <include reference="Kks-fE-r9I"/>
+                                <include reference="Lm6-dT-2va"/>
+                                <exclude reference="RwR-1i-HV1"/>
+                                <exclude reference="Vgw-Wj-k8H"/>
+                                <include reference="aVo-9e-hgS"/>
                                 <exclude reference="iXU-aZ-W3D"/>
                                 <exclude reference="0dJ-9X-odW"/>
                                 <exclude reference="hUR-TV-sMf"/>
@@ -545,12 +545,6 @@
                                 <include reference="NBN-II-4a0"/>
                                 <exclude reference="h73-LK-ret"/>
                                 <include reference="pkM-j8-uIx"/>
-                                <exclude reference="Fxz-da-Urg"/>
-                                <include reference="Kks-fE-r9I"/>
-                                <include reference="Lm6-dT-2va"/>
-                                <exclude reference="RwR-1i-HV1"/>
-                                <exclude reference="Vgw-Wj-k8H"/>
-                                <include reference="aVo-9e-hgS"/>
                                 <include reference="dc8-1E-nhZ"/>
                                 <exclude reference="gzV-pR-0mq"/>
                                 <include reference="mnu-Wc-bpB"/>
@@ -560,6 +554,12 @@
                                 <include reference="oT7-t1-z71"/>
                                 <exclude reference="pbF-zv-6gc"/>
                                 <include reference="xFC-mD-oaZ"/>
+                                <exclude reference="Fxz-da-Urg"/>
+                                <include reference="Kks-fE-r9I"/>
+                                <include reference="Lm6-dT-2va"/>
+                                <exclude reference="RwR-1i-HV1"/>
+                                <exclude reference="Vgw-Wj-k8H"/>
+                                <include reference="aVo-9e-hgS"/>
                                 <exclude reference="0dJ-9X-odW"/>
                                 <exclude reference="hUR-TV-sMf"/>
                                 <include reference="txh-iu-orC"/>

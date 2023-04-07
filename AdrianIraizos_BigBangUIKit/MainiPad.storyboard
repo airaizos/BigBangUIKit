@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w56-j2-tIW">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iPad Detail View Controller-->
+        <scene sceneID="N9f-bq-3MA">
+            <objects>
+                <viewController id="Prv-iN-jZT" customClass="iPadDetailViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Amz-Pj-oxS">
+                        <rect key="frame" x="0.0" y="0.0" width="873" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTp-nR-GfQ">
+                                <rect key="frame" x="116" y="400" width="642" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" name="BBTRed"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="tv1-lb-37V">
+                                <rect key="frame" x="116" y="408" width="642" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ7-mJ-bJq">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="50"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zk-fX-h8D">
+                                        <rect key="frame" x="83" y="0.0" width="105.5" height="50"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" name="BBTGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0B-QQ-Qyn">
+                                        <rect key="frame" x="210.5" y="0.0" width="66" height="50"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-mm-NSv">
+                                        <rect key="frame" x="298.5" y="0.0" width="105.5" height="50"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" name="BBTGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhl-4a-jT9">
+                                        <rect key="frame" x="426" y="0.0" width="66.5" height="50"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-js-ehK">
+                                        <rect key="frame" x="514.5" y="0.0" width="127.5" height="50"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" name="BBTGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pln-vh-cds">
+                                <rect key="frame" x="116" y="32" width="642" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="642" id="3Uh-qN-fqE"/>
+                                    <constraint firstAttribute="height" constant="360" id="o0O-2q-Al9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="192-h5-oh9">
+                                <rect key="frame" x="116" y="665" width="642" height="108"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" name="BBTGreenish"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfP-X0-2qN">
+                                <rect key="frame" x="398.5" y="636.5" width="76.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QrM-kx-r4P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pln-vh-cds" firstAttribute="centerX" secondItem="Amz-Pj-oxS" secondAttribute="centerX" id="5vR-PI-7V8"/>
+                            <constraint firstItem="192-h5-oh9" firstAttribute="trailing" secondItem="pln-vh-cds" secondAttribute="trailing" id="6ZZ-sF-XPm"/>
+                            <constraint firstItem="192-h5-oh9" firstAttribute="top" secondItem="DfP-X0-2qN" secondAttribute="bottom" constant="8" symbolic="YES" id="6a4-I5-qNb"/>
+                            <constraint firstItem="qTp-nR-GfQ" firstAttribute="top" secondItem="pln-vh-cds" secondAttribute="bottom" constant="8" symbolic="YES" id="DhV-8C-VEa"/>
+                            <constraint firstItem="qTp-nR-GfQ" firstAttribute="trailing" secondItem="pln-vh-cds" secondAttribute="trailing" id="NfI-mQ-Mus"/>
+                            <constraint firstItem="tv1-lb-37V" firstAttribute="leading" secondItem="pln-vh-cds" secondAttribute="leading" id="akI-FR-UFQ"/>
+                            <constraint firstItem="qTp-nR-GfQ" firstAttribute="leading" secondItem="pln-vh-cds" secondAttribute="leading" id="dJF-BL-1n8"/>
+                            <constraint firstItem="192-h5-oh9" firstAttribute="leading" secondItem="pln-vh-cds" secondAttribute="leading" id="mgl-fP-A6Z"/>
+                            <constraint firstItem="tv1-lb-37V" firstAttribute="trailing" secondItem="pln-vh-cds" secondAttribute="trailing" id="nLs-ov-pWN"/>
+                            <constraint firstItem="DfP-X0-2qN" firstAttribute="centerX" secondItem="Amz-Pj-oxS" secondAttribute="centerX" id="tc5-1p-Cbh"/>
+                            <constraint firstItem="pln-vh-cds" firstAttribute="top" secondItem="Amz-Pj-oxS" secondAttribute="top" constant="32" id="uiH-2z-TOP"/>
+                            <constraint firstItem="tv1-lb-37V" firstAttribute="top" secondItem="qTp-nR-GfQ" secondAttribute="bottom" constant="8" symbolic="YES" id="vdc-wr-DW3"/>
+                            <constraint firstItem="QrM-kx-r4P" firstAttribute="bottom" secondItem="192-h5-oh9" secondAttribute="bottom" constant="41" id="vgk-9E-zbK"/>
+                            <constraint firstItem="192-h5-oh9" firstAttribute="height" secondItem="pln-vh-cds" secondAttribute="height" multiplier="0.3" id="wX4-Qu-Cf7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="airDateLabel" destination="cgP-js-ehK" id="aKj-r1-yjb"/>
+                        <outlet property="episodeImage" destination="pln-vh-cds" id="qca-DB-gMl"/>
+                        <outlet property="episodeNumberLabel" destination="Ud5-mm-NSv" id="PkV-7R-bKf"/>
+                        <outlet property="nameLabel" destination="qTp-nR-GfQ" id="KHa-n8-147"/>
+                        <outlet property="seasonNumberLabel" destination="5zk-fX-h8D" id="rQr-q5-Moy"/>
+                        <outlet property="summaryTextView" destination="192-h5-oh9" id="Q6w-Jg-br3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4we-ec-g4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966.83417085427141" y="-42.446043165467628"/>
+        </scene>
+        <!--Episodes-->
+        <scene sceneID="nLv-eS-NN1">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="Rhv-fy-1Sj" customClass="iPadSeasonsTableViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9WB-Av-5Tw">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="iPadCell" id="ys7-hF-c3m">
+                                <rect key="frame" x="0.0" y="50" width="420" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ys7-hF-c3m" id="utU-o9-s9g">
+                                    <rect key="frame" x="100" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Rhv-fy-1Sj" id="jMZ-jx-XYY"/>
+                            <outlet property="delegate" destination="Rhv-fy-1Sj" id="rmQ-7h-Pt0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Episodes" id="Oby-jz-zIc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLV-xU-AUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="-720"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8qq-U8-TB0">
+            <objects>
+                <navigationController id="aeE-4W-HMg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2h8-Ft-RA6">
+                        <rect key="frame" x="0.0" y="24" width="420" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rhv-fy-1Sj" kind="relationship" relationship="rootViewController" id="uHG-rY-0SH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUH-UF-3vk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="-720"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="1tF-ht-UrO">
+            <objects>
+                <splitViewController allowDoubleColumnStyle="YES" primaryBackgroundStyle="sidebar" id="w56-j2-tIW" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="aeE-4W-HMg" kind="relationship" relationship="masterViewController" id="WeR-vy-D36"/>
+                        <segue destination="Prv-iN-jZT" kind="relationship" relationship="detailViewController" id="yuj-24-Q68"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbI-8G-oFS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="-416"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BBTGreen">
+            <color red="0.34900000691413879" green="0.39599999785423279" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BBTGreenish">
+            <color red="0.37599998712539673" green="0.72200000286102295" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BBTRed">
+            <color red="0.75700002908706665" green="0.16899999976158142" blue="0.035000000149011612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
