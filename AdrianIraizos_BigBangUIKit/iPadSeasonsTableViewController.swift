@@ -50,6 +50,8 @@ final class iPadSeasonsTableViewController: UITableViewController,UISearchResult
         let sectionHeader = UINib(nibName: "TableViewHeader", bundle: nil)
         tableView.register(sectionHeader, forHeaderFooterViewReuseIdentifier: "sectionHeader")
 
+        
+        
     }
     
     func updateSearchResults(for searchController: UISearchController) {

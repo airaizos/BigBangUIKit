@@ -23,16 +23,20 @@ final class iPadDetailViewController: UIViewController {
     @IBOutlet weak var airDateLabel: UILabel!
     @IBOutlet weak var summaryTextView: UITextView!
     
+    @IBOutlet weak var welcomeView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        selectedEpisode = Episode.test
         
         NotificationCenter.default.addObserver(forName: .selectedEpisode, object: nil, queue: .main) { notification in
             guard let episode = notification.object as? Episode else { return }
+            
             self.selectedEpisode = episode
           
         }
+       
+        
     }
     
     func loadEpisode() {
@@ -46,7 +50,14 @@ final class iPadDetailViewController: UIViewController {
         summaryTextView.text = episode.summary
         
         
+        if selectedEpisode != nil {
+            welcomeView.isHidden = true
+        }
     }
+    
+    
+
+    
     
     deinit {
         NotificationCenter.default.removeObserver(self, name: .selectedEpisode, object: nil)

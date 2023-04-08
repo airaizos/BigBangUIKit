@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +16,7 @@
             <objects>
                 <viewController id="Prv-iN-jZT" customClass="iPadDetailViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Amz-Pj-oxS">
-                        <rect key="frame" x="0.0" y="0.0" width="873" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="873.5" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTp-nR-GfQ">
@@ -28,37 +29,37 @@
                                 <rect key="frame" x="116" y="408" width="642" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ7-mJ-bJq">
-                                        <rect key="frame" x="0.0" y="0.0" width="61" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="50"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zk-fX-h8D">
-                                        <rect key="frame" x="83" y="0.0" width="105.5" height="50"/>
+                                        <rect key="frame" x="81" y="0.0" width="107" height="50"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" name="BBTGreen"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0B-QQ-Qyn">
-                                        <rect key="frame" x="210.5" y="0.0" width="66" height="50"/>
+                                        <rect key="frame" x="210" y="0.0" width="63.5" height="50"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud5-mm-NSv">
-                                        <rect key="frame" x="298.5" y="0.0" width="105.5" height="50"/>
+                                        <rect key="frame" x="295.5" y="0.0" width="107" height="50"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" name="BBTGreen"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhl-4a-jT9">
-                                        <rect key="frame" x="426" y="0.0" width="66.5" height="50"/>
+                                        <rect key="frame" x="424.5" y="0.0" width="64" height="50"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-js-ehK">
-                                        <rect key="frame" x="514.5" y="0.0" width="127.5" height="50"/>
+                                        <rect key="frame" x="510.5" y="0.0" width="131.5" height="50"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" name="BBTGreen"/>
                                         <nil key="highlightedColor"/>
@@ -90,6 +91,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ki5-Q2-L5Y">
+                                <rect key="frame" x="40" y="20" width="794" height="794"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigBangLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oPQ-ep-L9i">
+                                        <rect key="frame" x="226" y="21" width="341.5" height="341.5"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KF0-NZ-o2h">
+                                        <rect key="frame" x="80.5" y="391.5" width="633" height="144"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="633" id="kGf-dp-baB"/>
+                                            <constraint firstAttribute="height" constant="144" id="nc9-gD-B63"/>
+                                        </constraints>
+                                        <string key="text">¡Welcome to the Big Bang Theory episodes app!
+
+Where you will be able to register your favorites and already watched episodes of our favorite series!</string>
+                                        <color key="textColor" name="BBTGreenish"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="794" id="0Go-UK-SeW"/>
+                                    <constraint firstItem="oPQ-ep-L9i" firstAttribute="top" secondItem="ki5-Q2-L5Y" secondAttribute="top" constant="21" id="2mX-At-cDU"/>
+                                    <constraint firstItem="KF0-NZ-o2h" firstAttribute="top" secondItem="oPQ-ep-L9i" secondAttribute="bottom" constant="29" id="5r4-Wl-14Y"/>
+                                    <constraint firstItem="KF0-NZ-o2h" firstAttribute="centerX" secondItem="ki5-Q2-L5Y" secondAttribute="centerX" id="a3a-pC-rYb"/>
+                                    <constraint firstAttribute="height" constant="794" id="dfH-TP-sAI"/>
+                                    <constraint firstItem="oPQ-ep-L9i" firstAttribute="centerX" secondItem="ki5-Q2-L5Y" secondAttribute="centerX" id="kZh-DF-2ct"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QrM-kx-r4P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,8 +133,10 @@
                             <constraint firstItem="qTp-nR-GfQ" firstAttribute="trailing" secondItem="pln-vh-cds" secondAttribute="trailing" id="NfI-mQ-Mus"/>
                             <constraint firstItem="tv1-lb-37V" firstAttribute="leading" secondItem="pln-vh-cds" secondAttribute="leading" id="akI-FR-UFQ"/>
                             <constraint firstItem="qTp-nR-GfQ" firstAttribute="leading" secondItem="pln-vh-cds" secondAttribute="leading" id="dJF-BL-1n8"/>
+                            <constraint firstItem="ki5-Q2-L5Y" firstAttribute="centerY" secondItem="Amz-Pj-oxS" secondAttribute="centerY" id="iUZ-Re-lRm"/>
                             <constraint firstItem="192-h5-oh9" firstAttribute="leading" secondItem="pln-vh-cds" secondAttribute="leading" id="mgl-fP-A6Z"/>
                             <constraint firstItem="tv1-lb-37V" firstAttribute="trailing" secondItem="pln-vh-cds" secondAttribute="trailing" id="nLs-ov-pWN"/>
+                            <constraint firstItem="ki5-Q2-L5Y" firstAttribute="centerX" secondItem="Amz-Pj-oxS" secondAttribute="centerX" id="qSh-IL-J6B"/>
                             <constraint firstItem="DfP-X0-2qN" firstAttribute="centerX" secondItem="Amz-Pj-oxS" secondAttribute="centerX" id="tc5-1p-Cbh"/>
                             <constraint firstItem="pln-vh-cds" firstAttribute="top" secondItem="Amz-Pj-oxS" secondAttribute="top" constant="32" id="uiH-2z-TOP"/>
                             <constraint firstItem="tv1-lb-37V" firstAttribute="top" secondItem="qTp-nR-GfQ" secondAttribute="bottom" constant="8" symbolic="YES" id="vdc-wr-DW3"/>
@@ -117,6 +151,7 @@
                         <outlet property="nameLabel" destination="qTp-nR-GfQ" id="KHa-n8-147"/>
                         <outlet property="seasonNumberLabel" destination="5zk-fX-h8D" id="rQr-q5-Moy"/>
                         <outlet property="summaryTextView" destination="192-h5-oh9" id="Q6w-Jg-br3"/>
+                        <outlet property="welcomeView" destination="ki5-Q2-L5Y" id="Yeh-hK-2eL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4we-ec-g4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,11 +181,53 @@
                             <outlet property="delegate" destination="Rhv-fy-1Sj" id="rmQ-7h-Pt0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Episodes" id="Oby-jz-zIc"/>
+                    <navigationItem key="navigationItem" title="Episodes" id="Oby-jz-zIc">
+                        <barButtonItem key="rightBarButtonItem" image="star.circle" catalog="system" id="Xag-9I-btE">
+                            <connections>
+                                <segue destination="PkX-PJ-AtO" kind="show" id="7bD-J7-OGS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLV-xU-AUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1735" y="-720"/>
+        </scene>
+        <!--iPad Favorites Collection View Controller-->
+        <scene sceneID="o0x-PC-SfJ">
+            <objects>
+                <collectionViewController id="PkX-PJ-AtO" customClass="iPadFavoritesCollectionViewController" customModule="AdrianIraizos_BigBangUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="ETL-pr-PaS">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="ZmZ-Yo-aFD">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="iPadFavoriteCell" id="7TE-2t-t5v">
+                                <rect key="frame" x="108" y="8" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vmg-7R-Qtf">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="PkX-PJ-AtO" id="NAA-xS-NNG"/>
+                            <outlet property="delegate" destination="PkX-PJ-AtO" id="b7u-uk-dxX"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="4ZQ-Fy-a8q"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="420" height="834"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cr-o8-DaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.6231155778896" y="-717.2661870503598"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8qq-U8-TB0">
@@ -183,6 +260,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BigBangLogo" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="star.circle" catalog="system" width="128" height="123"/>
         <namedColor name="BBTGreen">
             <color red="0.34900000691413879" green="0.39599999785423279" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
