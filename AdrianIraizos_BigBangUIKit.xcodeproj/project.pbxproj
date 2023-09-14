@@ -13,12 +13,12 @@
 		3A044EC529D5CD8400B01D34 /* FavoritesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */; };
 		3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */; };
 		3A044EC929D5E00100B01D34 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC829D5E00100B01D34 /* Extensiones.swift */; };
+		3A36BBEB2AB312A20067E40F /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A36BBEA2AB312A20067E40F /* BigBang.json */; };
 		3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B429D4526C00C11B7A /* AppDelegate.swift */; };
 		3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B629D4526C00C11B7A /* SceneDelegate.swift */; };
 		3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BA29D4526C00C11B7A /* Main.storyboard */; };
 		3A5305BE29D4526D00C11B7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BD29D4526D00C11B7A /* Assets.xcassets */; };
 		3A5305C129D4526D00C11B7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BF29D4526D00C11B7A /* LaunchScreen.storyboard */; };
-		3A5305CA29D452B200C11B7A /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305C929D452B200C11B7A /* BigBang.json */; };
 		3A5305D029D4768900C11B7A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305CF29D4768900C11B7A /* TableViewCell.swift */; };
 		3A5305D629D476DC00C11B7A /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305D529D476DC00C11B7A /* Episode.swift */; };
 		3A5305D829D4776F00C11B7A /* ModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305D729D4776F00C11B7A /* ModelLogic.swift */; };
@@ -42,14 +42,14 @@
 		3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewCell.swift; sourceTree = "<group>"; };
 		3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogic.swift; sourceTree = "<group>"; };
 		3A044EC829D5E00100B01D34 /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
+		3A36BBEA2AB312A20067E40F /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BigBang.json; path = "../../../../Desktop/xCode/Bootcamp/Ejercicios/Big Bang App/BigBang.json"; sourceTree = "<group>"; };
 		3A5305B129D4526C00C11B7A /* AdrianIraizos_BigBangUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianIraizos_BigBangUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5305B429D4526C00C11B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5305B629D4526C00C11B7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A5305BB29D4526C00C11B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A5305BD29D4526D00C11B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/adrian/Desktop/xCode/Bootcamp/Ejercicios/AdrianIraizos_BigBangUIKit/AdrianIraizos_BigBangUIKit/Assets.xcassets; sourceTree = "<absolute>"; };
+		3A5305BD29D4526D00C11B7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/adrian/MundoDev/Repositorios/AdrianIraizos_BigBangUIKit/AdrianIraizos_BigBangUIKit/Assets.xcassets; sourceTree = "<absolute>"; };
 		3A5305C029D4526D00C11B7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5305C229D4526D00C11B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A5305C929D452B200C11B7A /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BigBang.json; path = /Users/adrian/Desktop/xCode/Bootcamp/Ejercicios/AdrianIraizos_BigBangUIKit/AdrianIraizos_BigBangUIKit/BigBang.json; sourceTree = "<absolute>"; };
 		3A5305CF29D4768900C11B7A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A5305D529D476DC00C11B7A /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		3A5305D729D4776F00C11B7A /* ModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLogic.swift; sourceTree = "<group>"; };
@@ -77,6 +77,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A36BBEC2AB313A00067E40F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3A5305B429D4526C00C11B7A /* AppDelegate.swift */,
+				3A5305B629D4526C00C11B7A /* SceneDelegate.swift */,
+				3A5305BA29D4526C00C11B7A /* Main.storyboard */,
+				3A5305BD29D4526D00C11B7A /* Assets.xcassets */,
+				3A5305BF29D4526D00C11B7A /* LaunchScreen.storyboard */,
+				3A5305C229D4526D00C11B7A /* Info.plist */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		3A36BBED2AB313AE0067E40F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		3A5305A829D4526C00C11B7A = {
 			isa = PBXGroup;
 			children = (
@@ -96,14 +116,10 @@
 		3A5305B329D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3A36BBED2AB313AE0067E40F /* Tests */,
+				3A36BBEC2AB313A00067E40F /* System */,
 				3AE1A1D529E084E500C7CBF2 /* iPad */,
 				3A5305C829D452A700C11B7A /* Helpers */,
-				3A5305B429D4526C00C11B7A /* AppDelegate.swift */,
-				3A5305B629D4526C00C11B7A /* SceneDelegate.swift */,
-				3A5305BA29D4526C00C11B7A /* Main.storyboard */,
-				3A5305BD29D4526D00C11B7A /* Assets.xcassets */,
-				3A5305BF29D4526D00C11B7A /* LaunchScreen.storyboard */,
-				3A5305C229D4526D00C11B7A /* Info.plist */,
 			);
 			path = AdrianIraizos_BigBangUIKit;
 			sourceTree = "<group>";
@@ -114,7 +130,7 @@
 				3A5305D129D4769700C11B7A /* Model */,
 				3A5305D229D4769E00C11B7A /* View */,
 				3A5305D329D476A300C11B7A /* Controller */,
-				3A5305C929D452B200C11B7A /* BigBang.json */,
+				3A36BBEA2AB312A20067E40F /* BigBang.json */,
 				3A044EC829D5E00100B01D34 /* Extensiones.swift */,
 			);
 			name = Helpers;
@@ -235,9 +251,9 @@
 			files = (
 				3A5305C129D4526D00C11B7A /* LaunchScreen.storyboard in Resources */,
 				3AE1A1D729E084F100C7CBF2 /* MainiPad.storyboard in Resources */,
+				3A36BBEB2AB312A20067E40F /* BigBang.json in Resources */,
 				3A5305BE29D4526D00C11B7A /* Assets.xcassets in Resources */,
 				3A04435929DC0D82005CD724 /* TableViewHeader.xib in Resources */,
-				3A5305CA29D452B200C11B7A /* BigBang.json in Resources */,
 				3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
