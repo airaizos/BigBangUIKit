@@ -19,6 +19,7 @@
 		3A36BC022AB319F10067E40F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC012AB319F10067E40F /* main.swift */; };
 		3A36BC042AB31CB30067E40F /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC032AB31CB30067E40F /* MyApp.swift */; };
 		3A36BC052AB31D5D0067E40F /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */; };
+		3A36BC082AB322010067E40F /* StoryboardViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC072AB322010067E40F /* StoryboardViewControllerTests.swift */; };
 		3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B429D4526C00C11B7A /* AppDelegate.swift */; };
 		3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B629D4526C00C11B7A /* SceneDelegate.swift */; };
 		3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BA29D4526C00C11B7A /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestingAppDelegate.swift; path = AdrianIraizos_BigBangUIKitTests/TestingAppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		3A36BC012AB319F10067E40F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3A36BC032AB31CB30067E40F /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
+		3A36BC072AB322010067E40F /* StoryboardViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewControllerTests.swift; sourceTree = "<group>"; };
 		3A5305B129D4526C00C11B7A /* AdrianIraizos_BigBangUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianIraizos_BigBangUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5305B429D4526C00C11B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5305B629D4526C00C11B7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				3A36BBFE2AB315B20067E40F /* TestsClasses */,
 				3A36BBF42AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift */,
 				3A36BBFB2AB315190067E40F /* AppLaunchTests.swift */,
+				3A36BC072AB322010067E40F /* StoryboardViewControllerTests.swift */,
 			);
 			path = AdrianIraizos_BigBangUIKitTests;
 			sourceTree = "<group>";
@@ -161,6 +164,9 @@
 			children = (
 				3A36BBEC2AB313A00067E40F /* System */,
 				3AE1A1D529E084E500C7CBF2 /* iPad */,
+				3A5305D129D4769700C11B7A /* Model */,
+				3A5305D229D4769E00C11B7A /* View */,
+				3A5305D329D476A300C11B7A /* Controller */,
 				3A5305C829D452A700C11B7A /* Helpers */,
 			);
 			path = AdrianIraizos_BigBangUIKit;
@@ -169,9 +175,6 @@
 		3A5305C829D452A700C11B7A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3A5305D129D4769700C11B7A /* Model */,
-				3A5305D229D4769E00C11B7A /* View */,
-				3A5305D329D476A300C11B7A /* Controller */,
 				3A36BBEA2AB312A20067E40F /* BigBang.json */,
 				3A044EC829D5E00100B01D34 /* Extensiones.swift */,
 			);
@@ -339,6 +342,7 @@
 			files = (
 				3A36BBFC2AB3151A0067E40F /* AppLaunchTests.swift in Sources */,
 				3A36BBF52AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift in Sources */,
+				3A36BC082AB322010067E40F /* StoryboardViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
