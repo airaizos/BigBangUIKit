@@ -14,6 +14,11 @@
 		3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */; };
 		3A044EC929D5E00100B01D34 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC829D5E00100B01D34 /* Extensiones.swift */; };
 		3A36BBEB2AB312A20067E40F /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A36BBEA2AB312A20067E40F /* BigBang.json */; };
+		3A36BBF52AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBF42AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift */; };
+		3A36BBFC2AB3151A0067E40F /* AppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBFB2AB315190067E40F /* AppLaunchTests.swift */; };
+		3A36BC022AB319F10067E40F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC012AB319F10067E40F /* main.swift */; };
+		3A36BC042AB31CB30067E40F /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC032AB31CB30067E40F /* MyApp.swift */; };
+		3A36BC052AB31D5D0067E40F /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */; };
 		3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B429D4526C00C11B7A /* AppDelegate.swift */; };
 		3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B629D4526C00C11B7A /* SceneDelegate.swift */; };
 		3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5305BA29D4526C00C11B7A /* Main.storyboard */; };
@@ -35,6 +40,16 @@
 		3AE1A1DF29E0928700C7CBF2 /* iPadDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1A1DE29E0928700C7CBF2 /* iPadDetailView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3A36BBF62AB3146B0067E40F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A5305A929D4526C00C11B7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A5305B029D4526C00C11B7A;
+			remoteInfo = AdrianIraizos_BigBangUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3A04435629DC0D60005CD724 /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
 		3A04435829DC0D82005CD724 /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
@@ -43,6 +58,12 @@
 		3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogic.swift; sourceTree = "<group>"; };
 		3A044EC829D5E00100B01D34 /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
 		3A36BBEA2AB312A20067E40F /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BigBang.json; path = "../../../../Desktop/xCode/Bootcamp/Ejercicios/Big Bang App/BigBang.json"; sourceTree = "<group>"; };
+		3A36BBF22AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdrianIraizos_BigBangUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A36BBF42AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdrianIraizos_BigBangUIKitTests.swift; sourceTree = "<group>"; };
+		3A36BBFB2AB315190067E40F /* AppLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchTests.swift; sourceTree = "<group>"; };
+		3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestingAppDelegate.swift; path = AdrianIraizos_BigBangUIKitTests/TestingAppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		3A36BC012AB319F10067E40F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3A36BC032AB31CB30067E40F /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		3A5305B129D4526C00C11B7A /* AdrianIraizos_BigBangUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianIraizos_BigBangUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5305B429D4526C00C11B7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5305B629D4526C00C11B7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A36BBEF2AB3146B0067E40F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5305AE29D4526C00C11B7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,21 +114,35 @@
 				3A5305BD29D4526D00C11B7A /* Assets.xcassets */,
 				3A5305BF29D4526D00C11B7A /* LaunchScreen.storyboard */,
 				3A5305C229D4526D00C11B7A /* Info.plist */,
+				3A36BC012AB319F10067E40F /* main.swift */,
+				3A36BC032AB31CB30067E40F /* MyApp.swift */,
+				3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */,
 			);
 			name = System;
 			sourceTree = "<group>";
 		};
-		3A36BBED2AB313AE0067E40F /* Tests */ = {
+		3A36BBF32AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A36BBFE2AB315B20067E40F /* TestsClasses */,
+				3A36BBF42AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift */,
+				3A36BBFB2AB315190067E40F /* AppLaunchTests.swift */,
+			);
+			path = AdrianIraizos_BigBangUIKitTests;
+			sourceTree = "<group>";
+		};
+		3A36BBFE2AB315B20067E40F /* TestsClasses */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Tests;
+			name = TestsClasses;
 			sourceTree = "<group>";
 		};
 		3A5305A829D4526C00C11B7A = {
 			isa = PBXGroup;
 			children = (
 				3A5305B329D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */,
+				3A36BBF32AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests */,
 				3A5305B229D4526C00C11B7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5305B129D4526C00C11B7A /* AdrianIraizos_BigBangUIKit.app */,
+				3A36BBF22AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +159,6 @@
 		3A5305B329D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				3A36BBED2AB313AE0067E40F /* Tests */,
 				3A36BBEC2AB313A00067E40F /* System */,
 				3AE1A1D529E084E500C7CBF2 /* iPad */,
 				3A5305C829D452A700C11B7A /* Helpers */,
@@ -194,6 +236,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3A36BBF12AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A36BBF82AB3146B0067E40F /* Build configuration list for PBXNativeTarget "AdrianIraizos_BigBangUIKitTests" */;
+			buildPhases = (
+				3A36BBEE2AB3146B0067E40F /* Sources */,
+				3A36BBEF2AB3146B0067E40F /* Frameworks */,
+				3A36BBF02AB3146B0067E40F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A36BBF72AB3146B0067E40F /* PBXTargetDependency */,
+			);
+			name = AdrianIraizos_BigBangUIKitTests;
+			productName = AdrianIraizos_BigBangUIKitTests;
+			productReference = 3A36BBF22AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3A5305B029D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A5305C529D4526D00C11B7A /* Build configuration list for PBXNativeTarget "AdrianIraizos_BigBangUIKit" */;
@@ -218,9 +278,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					3A36BBF12AB3146B0067E40F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 3A5305B029D4526C00C11B7A;
+					};
 					3A5305B029D4526C00C11B7A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -240,11 +304,19 @@
 			projectRoot = "";
 			targets = (
 				3A5305B029D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */,
+				3A36BBF12AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A36BBF02AB3146B0067E40F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5305AF29D4526C00C11B7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +333,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A36BBEE2AB3146B0067E40F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A36BBFC2AB3151A0067E40F /* AppLaunchTests.swift in Sources */,
+				3A36BBF52AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A5305AD29D4526C00C11B7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,15 +353,18 @@
 				3A044EC529D5CD8400B01D34 /* FavoritesViewCell.swift in Sources */,
 				3A5305D629D476DC00C11B7A /* Episode.swift in Sources */,
 				3AE1A1DD29E08D7A00C7CBF2 /* iPadDetailViewController.swift in Sources */,
+				3A36BC042AB31CB30067E40F /* MyApp.swift in Sources */,
 				3A044EC329D5C6D200B01D34 /* FavoritesCollectionViewController.swift in Sources */,
 				3A04435729DC0D60005CD724 /* TableViewHeader.swift in Sources */,
 				3A5305DC29D47B7300C11B7A /* SeasonsTableViewController.swift in Sources */,
 				3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */,
 				3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */,
+				3A36BC022AB319F10067E40F /* main.swift in Sources */,
 				3A5305D829D4776F00C11B7A /* ModelLogic.swift in Sources */,
 				3A56B6C129E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift in Sources */,
 				3A56B6C329E18A7800A99680 /* iPadFavoritesViewCell.swift in Sources */,
 				3AE1A1DF29E0928700C7CBF2 /* iPadDetailView.swift in Sources */,
+				3A36BC052AB31D5D0067E40F /* TestingAppDelegate.swift in Sources */,
 				3AE1A1D929E0892C00C7CBF2 /* iPadTableViewCell.swift in Sources */,
 				3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */,
 				3A5305DE29D4808900C11B7A /* EpisodesDiffableDataSource.swift in Sources */,
@@ -289,6 +373,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A36BBF72AB3146B0067E40F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A5305B029D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */;
+			targetProxy = 3A36BBF62AB3146B0067E40F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A5305BA29D4526C00C11B7A /* Main.storyboard */ = {
@@ -310,6 +402,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3A36BBF92AB3146B0067E40F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SPUJN2479;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.adrianiraizos.AdrianIraizos-BigBangUIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdrianIraizos_BigBangUIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdrianIraizos_BigBangUIKit";
+			};
+			name = Debug;
+		};
+		3A36BBFA2AB3146B0067E40F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SPUJN2479;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.adrianiraizos.AdrianIraizos-BigBangUIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdrianIraizos_BigBangUIKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdrianIraizos_BigBangUIKit";
+			};
+			name = Release;
+		};
 		3A5305C329D4526D00C11B7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -483,6 +613,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A36BBF82AB3146B0067E40F /* Build configuration list for PBXNativeTarget "AdrianIraizos_BigBangUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A36BBF92AB3146B0067E40F /* Debug */,
+				3A36BBFA2AB3146B0067E40F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3A5305AC29D4526C00C11B7A /* Build configuration list for PBXProject "AdrianIraizos_BigBangUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
