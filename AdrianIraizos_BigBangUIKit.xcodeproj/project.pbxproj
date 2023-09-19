@@ -36,6 +36,7 @@
 		3A56B6C129E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56B6C029E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift */; };
 		3A56B6C329E18A7800A99680 /* iPadFavoritesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56B6C229E18A7800A99680 /* iPadFavoritesViewCell.swift */; };
 		3ABC320B2AB9DAC5003D053C /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */; };
+		3ABC320F2AB9ED1C003D053C /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 3ABC320E2AB9ED1C003D053C /* ReadMe.md */; };
 		3AC44EFC29D499DD009D1434 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC44EFB29D499DD009D1434 /* DetailViewController.swift */; };
 		3AE1A1D729E084F100C7CBF2 /* MainiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE1A1D629E084F100C7CBF2 /* MainiPad.storyboard */; };
 		3AE1A1D929E0892C00C7CBF2 /* iPadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1A1D829E0892C00C7CBF2 /* iPadTableViewCell.swift */; };
@@ -87,6 +88,7 @@
 		3A5305DD29D4808900C11B7A /* EpisodesDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDiffableDataSource.swift; sourceTree = "<group>"; };
 		3A56B6C029E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadFavoritesCollectionViewController.swift; sourceTree = "<group>"; };
 		3A56B6C229E18A7800A99680 /* iPadFavoritesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadFavoritesViewCell.swift; sourceTree = "<group>"; };
+		3ABC320E2AB9ED1C003D053C /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		3AC44EFB29D499DD009D1434 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3AE1A1D629E084F100C7CBF2 /* MainiPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainiPad.storyboard; sourceTree = "<group>"; };
 		3AE1A1D829E0892C00C7CBF2 /* iPadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadTableViewCell.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		3A5305B329D4526C00C11B7A /* AdrianIraizos_BigBangUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3ABC320E2AB9ED1C003D053C /* ReadMe.md */,
 				3A36BBEC2AB313A00067E40F /* System */,
 				3AE1A1D529E084E500C7CBF2 /* iPad */,
 				3A5305D129D4769700C11B7A /* Model */,
@@ -339,6 +342,7 @@
 				3A36BBEB2AB312A20067E40F /* BigBang.json in Resources */,
 				3A5305BE29D4526D00C11B7A /* Assets.xcassets in Resources */,
 				3A04435929DC0D82005CD724 /* TableViewHeader.xib in Resources */,
+				3ABC320F2AB9ED1C003D053C /* ReadMe.md in Resources */,
 				3A5305BC29D4526C00C11B7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
