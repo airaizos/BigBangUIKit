@@ -19,19 +19,12 @@ final class TableViewCell: UITableViewCell {
         nameLabel.text = nil
         episodeNumberLabel.text = nil
         airDateLabel.text = nil
-      
-      //  ratingSlider.setThumbImage(UIImage(systemName: "heart.fill"), for: .normal)
     }
     
     override func awakeFromNib() {
-      
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-   
     }
-
 }

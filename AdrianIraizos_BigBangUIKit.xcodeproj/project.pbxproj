@@ -13,12 +13,14 @@
 		3A044EC529D5CD8400B01D34 /* FavoritesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */; };
 		3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */; };
 		3A044EC929D5E00100B01D34 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A044EC829D5E00100B01D34 /* Extensiones.swift */; };
+		3A0CB2F22AB9A281003125B8 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CB2F12AB9A281003125B8 /* Interface.swift */; };
+		3A0CB2F42AB9AE21003125B8 /* TestBigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CB2F32AB9AE21003125B8 /* TestBigBang.json */; };
+		3A0CB2F62AB9AFD0003125B8 /* TestingPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0CB2F52AB9AFD0003125B8 /* TestingPaths.swift */; };
 		3A36BBEB2AB312A20067E40F /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A36BBEA2AB312A20067E40F /* BigBang.json */; };
 		3A36BBF52AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBF42AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift */; };
 		3A36BBFC2AB3151A0067E40F /* AppLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBFB2AB315190067E40F /* AppLaunchTests.swift */; };
 		3A36BC022AB319F10067E40F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC012AB319F10067E40F /* main.swift */; };
 		3A36BC042AB31CB30067E40F /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC032AB31CB30067E40F /* MyApp.swift */; };
-		3A36BC052AB31D5D0067E40F /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */; };
 		3A36BC082AB322010067E40F /* StoryboardViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BC072AB322010067E40F /* StoryboardViewControllerTests.swift */; };
 		3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B429D4526C00C11B7A /* AppDelegate.swift */; };
 		3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305B629D4526C00C11B7A /* SceneDelegate.swift */; };
@@ -28,11 +30,12 @@
 		3A5305D029D4768900C11B7A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305CF29D4768900C11B7A /* TableViewCell.swift */; };
 		3A5305D629D476DC00C11B7A /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305D529D476DC00C11B7A /* Episode.swift */; };
 		3A5305D829D4776F00C11B7A /* ModelLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305D729D4776F00C11B7A /* ModelLogic.swift */; };
-		3A5305DA29D4777800C11B7A /* ModelPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305D929D4777800C11B7A /* ModelPersistence.swift */; };
+		3A5305DA29D4777800C11B7A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305D929D4777800C11B7A /* Persistence.swift */; };
 		3A5305DC29D47B7300C11B7A /* SeasonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305DB29D47B7300C11B7A /* SeasonsTableViewController.swift */; };
 		3A5305DE29D4808900C11B7A /* EpisodesDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5305DD29D4808900C11B7A /* EpisodesDiffableDataSource.swift */; };
 		3A56B6C129E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56B6C029E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift */; };
 		3A56B6C329E18A7800A99680 /* iPadFavoritesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56B6C229E18A7800A99680 /* iPadFavoritesViewCell.swift */; };
+		3ABC320B2AB9DAC5003D053C /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */; };
 		3AC44EFC29D499DD009D1434 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC44EFB29D499DD009D1434 /* DetailViewController.swift */; };
 		3AE1A1D729E084F100C7CBF2 /* MainiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE1A1D629E084F100C7CBF2 /* MainiPad.storyboard */; };
 		3AE1A1D929E0892C00C7CBF2 /* iPadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE1A1D829E0892C00C7CBF2 /* iPadTableViewCell.swift */; };
@@ -58,6 +61,9 @@
 		3A044EC429D5CD8400B01D34 /* FavoritesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewCell.swift; sourceTree = "<group>"; };
 		3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLogic.swift; sourceTree = "<group>"; };
 		3A044EC829D5E00100B01D34 /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
+		3A0CB2F12AB9A281003125B8 /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		3A0CB2F32AB9AE21003125B8 /* TestBigBang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestBigBang.json; sourceTree = "<group>"; };
+		3A0CB2F52AB9AFD0003125B8 /* TestingPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingPaths.swift; sourceTree = "<group>"; };
 		3A36BBEA2AB312A20067E40F /* BigBang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = BigBang.json; path = "../../../../Desktop/xCode/Bootcamp/Ejercicios/Big Bang App/BigBang.json"; sourceTree = "<group>"; };
 		3A36BBF22AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdrianIraizos_BigBangUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A36BBF42AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdrianIraizos_BigBangUIKitTests.swift; sourceTree = "<group>"; };
@@ -76,7 +82,7 @@
 		3A5305CF29D4768900C11B7A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A5305D529D476DC00C11B7A /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		3A5305D729D4776F00C11B7A /* ModelLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLogic.swift; sourceTree = "<group>"; };
-		3A5305D929D4777800C11B7A /* ModelPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPersistence.swift; sourceTree = "<group>"; };
+		3A5305D929D4777800C11B7A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3A5305DB29D47B7300C11B7A /* SeasonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewController.swift; sourceTree = "<group>"; };
 		3A5305DD29D4808900C11B7A /* EpisodesDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesDiffableDataSource.swift; sourceTree = "<group>"; };
 		3A56B6C029E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadFavoritesCollectionViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +124,6 @@
 				3A5305C229D4526D00C11B7A /* Info.plist */,
 				3A36BC012AB319F10067E40F /* main.swift */,
 				3A36BC032AB31CB30067E40F /* MyApp.swift */,
-				3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */,
 			);
 			name = System;
 			sourceTree = "<group>";
@@ -128,8 +133,8 @@
 			children = (
 				3A36BBFE2AB315B20067E40F /* TestsClasses */,
 				3A36BBF42AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift */,
-				3A36BBFB2AB315190067E40F /* AppLaunchTests.swift */,
 				3A36BC072AB322010067E40F /* StoryboardViewControllerTests.swift */,
+				3A0CB2F32AB9AE21003125B8 /* TestBigBang.json */,
 			);
 			path = AdrianIraizos_BigBangUIKitTests;
 			sourceTree = "<group>";
@@ -137,6 +142,9 @@
 		3A36BBFE2AB315B20067E40F /* TestsClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3A36BBFF2AB315CB0067E40F /* TestingAppDelegate.swift */,
+				3A36BBFB2AB315190067E40F /* AppLaunchTests.swift */,
+				3A0CB2F52AB9AFD0003125B8 /* TestingPaths.swift */,
 			);
 			name = TestsClasses;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			children = (
 				3A36BBEA2AB312A20067E40F /* BigBang.json */,
 				3A044EC829D5E00100B01D34 /* Extensiones.swift */,
+				3A0CB2F12AB9A281003125B8 /* Interface.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -186,7 +195,7 @@
 			children = (
 				3A5305D529D476DC00C11B7A /* Episode.swift */,
 				3A5305D729D4776F00C11B7A /* ModelLogic.swift */,
-				3A5305D929D4777800C11B7A /* ModelPersistence.swift */,
+				3A5305D929D4777800C11B7A /* Persistence.swift */,
 				3A5305DD29D4808900C11B7A /* EpisodesDiffableDataSource.swift */,
 				3A044EC629D5CE6C00B01D34 /* ViewLogic.swift */,
 			);
@@ -317,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0CB2F42AB9AE21003125B8 /* TestBigBang.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +350,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABC320B2AB9DAC5003D053C /* TestingAppDelegate.swift in Sources */,
 				3A36BBFC2AB3151A0067E40F /* AppLaunchTests.swift in Sources */,
 				3A36BBF52AB3146B0067E40F /* AdrianIraizos_BigBangUIKitTests.swift in Sources */,
 				3A36BC082AB322010067E40F /* StoryboardViewControllerTests.swift in Sources */,
+				3A0CB2F62AB9AFD0003125B8 /* TestingPaths.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +373,7 @@
 				3A044EC329D5C6D200B01D34 /* FavoritesCollectionViewController.swift in Sources */,
 				3A04435729DC0D60005CD724 /* TableViewHeader.swift in Sources */,
 				3A5305DC29D47B7300C11B7A /* SeasonsTableViewController.swift in Sources */,
+				3A0CB2F22AB9A281003125B8 /* Interface.swift in Sources */,
 				3A044EC729D5CE6C00B01D34 /* ViewLogic.swift in Sources */,
 				3A5305B529D4526C00C11B7A /* AppDelegate.swift in Sources */,
 				3A36BC022AB319F10067E40F /* main.swift in Sources */,
@@ -368,11 +381,10 @@
 				3A56B6C129E18A4F00A99680 /* iPadFavoritesCollectionViewController.swift in Sources */,
 				3A56B6C329E18A7800A99680 /* iPadFavoritesViewCell.swift in Sources */,
 				3AE1A1DF29E0928700C7CBF2 /* iPadDetailView.swift in Sources */,
-				3A36BC052AB31D5D0067E40F /* TestingAppDelegate.swift in Sources */,
 				3AE1A1D929E0892C00C7CBF2 /* iPadTableViewCell.swift in Sources */,
 				3A5305B729D4526C00C11B7A /* SceneDelegate.swift in Sources */,
 				3A5305DE29D4808900C11B7A /* EpisodesDiffableDataSource.swift in Sources */,
-				3A5305DA29D4777800C11B7A /* ModelPersistence.swift in Sources */,
+				3A5305DA29D4777800C11B7A /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

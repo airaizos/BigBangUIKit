@@ -13,17 +13,11 @@ final class FavoritesViewCell: UICollectionViewCell {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var watchedButton: UIButton!
     @IBOutlet weak var checkButton: UIButton!
-    
     @IBOutlet weak var nameLabel: UILabel!
-    
-    
     @IBOutlet weak var seasonNumberLabel: UILabel!
     @IBOutlet weak var episodeNumberLabel: UILabel!
     
-    
-    
     override class func awakeFromNib() {
-        
     }
     
     override func prepareForReuse() {
@@ -34,8 +28,5 @@ final class FavoritesViewCell: UICollectionViewCell {
         nameLabel.text = nil
         seasonNumberLabel.text = nil
         episodeNumberLabel.text = nil
-        
     }
-    
-    
 }

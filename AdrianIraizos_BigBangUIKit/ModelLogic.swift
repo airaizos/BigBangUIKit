@@ -10,7 +10,7 @@ import UIKit
 final class ModelLogic {
     static let shared = ModelLogic()
     
-    let persistence = ModelPersistence.shared
+    let persistence = Persistence.shared
     
     private var episodes: [Episode]
     private var seasons:[Int] {
@@ -46,24 +46,6 @@ final class ModelLogic {
         }
     }
     
-    private init() {
-        do {
-            self.episodes = try persistence.loadEpisodes()
-            self.favorites = try persistence.loadFavorites()
-            self.watched = try persistence.loadWatched()
-            self.ratings = try persistence.loadRatings()
-            self.checked = try persistence.loadChecks()
-        } catch {
-            
-            self.episodes = []
-            self.favorites = []
-            self.watched = []
-            self.ratings = [:]
-            self.checked = []
-            
-        }
-    }
-    
     var snapshot:NSDiffableDataSourceSnapshot<String,Episode> {
         var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
         let seasons = seasons.map { String(format: "%0d",$0) }
@@ -78,14 +60,11 @@ final class ModelLogic {
     var favoritesSnapshot: NSDiffableDataSourceSnapshot<String,Episode> {
         var snapshot = NSDiffableDataSourceSnapshot<String,Episode>()
         snapshot.appendSections([""])
-        /*
-         let episodes = episodes.filter { episode in
-         favorites.contains(episode.id)
-         }
-         */
+
         let favoritesIds = favoritesFilteredEpisodes.filter { id in
             favorites.contains(id)
         }
+        
         let episodes = episodes.filter {  episode in
             favoritesIds.contains(episode.id)
         }
@@ -94,65 +73,7 @@ final class ModelLogic {
         return snapshot
     }
     
-    //MARK: Favoritos
-    func getFavoritesCount() -> Int {
-        favorites.count
-    }
-    
-    func getEpisodeFromId(indexPath: IndexPath) -> Episode? {
-        let id = favorites[indexPath.row]
-        return episodes.first { $0.id == id }
-    }
-    
-    func isFavorite(id:Int) -> Bool {
-        favorites.contains(id)
-    }
-    
-    func toggleFavorite(id:Int) {
-        switch favorites.contains(id) {
-        case true: favorites.removeAll { $0 == id }
-        case false: favorites.append(id)
-        }
-    }
-    
-    //MARK: Watched
-    func isWatched(id:Int) -> Bool {
-        watched.contains(id)
-    }
-    
-    func toggleWatch(id:Int) {
-        switch watched.contains(id) {
-        case true: watched.removeAll { $0 == id }
-        case false: watched.append(id)
-        }
-    }
-    
-    func isCheck(id:Int) -> Bool {
-        checked.contains(id)
-    }
-    func toggleChecked(id:Int) {
-        switch checked.contains(id) {
-        case true: checked.removeAll { $0 == id }
-        case false: checked.append(id)
-        }
-    }
-    
-    func getRating(id:Int) -> Int {
-        let ratings = ratings.filter { $0.key == id }
-        guard let rating = ratings[id] else { return 0 }
-        return rating
-    }
-    
-    func saveRating(id:Int,value:Int) {
-        ratings[id] = value
-    }
-    
-    func ratingPressed(episodeId: Int,rating:Int) {
-        ratings[episodeId] = rating
-    }
-    
     //MARK: SearchBarTableView
-    
     var searchText = ""
     var filteredEpisodes:[Episode] {
         
@@ -208,4 +129,80 @@ final class ModelLogic {
             }
         }
     }
+    
+    private init() {
+        do {
+            self.episodes = try persistence.loadEpisodes()
+            self.favorites = try persistence.loadFavorites()
+            self.watched = try persistence.loadWatched()
+            self.ratings = try persistence.loadRatings()
+            self.checked = try persistence.loadChecks()
+        } catch {
+            
+            self.episodes = []
+            self.favorites = []
+            self.watched = []
+            self.ratings = [:]
+            self.checked = []
+        }
+    }
+    
+    //MARK: Favoritos
+    func getFavoritesCount() -> Int {
+        favorites.count
+    }
+    
+    func getEpisodeFromId(indexPath: IndexPath) -> Episode? {
+        let id = favorites[indexPath.row]
+        return episodes.first { $0.id == id }
+    }
+    
+    func isFavorite(id:Int) -> Bool {
+        favorites.contains(id)
+    }
+    
+    func toggleFavorite(id:Int) {
+        switch favorites.contains(id) {
+        case true: favorites.removeAll { $0 == id }
+        case false: favorites.append(id)
+        }
+    }
+    
+    //MARK: Watched
+    func isWatched(id:Int) -> Bool {
+        watched.contains(id)
+    }
+    
+    func toggleWatch(id:Int) {
+        switch watched.contains(id) {
+        case true: watched.removeAll { $0 == id }
+        case false: watched.append(id)
+        }
+    }
+    
+    func isCheck(id:Int) -> Bool {
+        checked.contains(id)
+    }
+    
+    func toggleChecked(id:Int) {
+        switch checked.contains(id) {
+        case true: checked.removeAll { $0 == id }
+        case false: checked.append(id)
+        }
+    }
+    
+    func getRating(id:Int) -> Int {
+        let ratings = ratings.filter { $0.key == id }
+        guard let rating = ratings[id] else { return 0 }
+        return rating
+    }
+    
+    func saveRating(id:Int,value:Int) {
+        ratings[id] = value
+    }
+    
+    func ratingPressed(episodeId: Int,rating:Int) {
+        ratings[episodeId] = rating
+    }
+    
 }

@@ -10,7 +10,7 @@ import SwiftUI
 final class iPadSeasonsTableViewController: UITableViewController,UISearchResultsUpdating {
     
     let modelLogic = ModelLogic.shared
-    let modelPersistence = ModelPersistence.shared
+    let modelPersistence = Persistence.shared
     let viewLogic = ViewLogic.shared
     
     let nameCell = "iPadCell"

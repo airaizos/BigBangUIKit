@@ -14,7 +14,6 @@ final class DetailViewController: UIViewController {
     
     var selectedEpisode:Episode?
     
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var seasonNumberLabel: UILabel!
     @IBOutlet weak var episodeImage: UIImageView!
@@ -27,7 +26,6 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak var checkButton: UIButton!
    
     //Rating
-    
     @IBOutlet weak var rating1: UIButton!
     @IBOutlet weak var rating2: UIButton!
     @IBOutlet weak var rating3: UIButton!
@@ -35,7 +33,6 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak var rating5: UIButton!
     
     // tvmaze
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,7 +54,6 @@ final class DetailViewController: UIViewController {
         rating4.setImage(viewLogic.getRatingImage(episodeId: episode.id, buttonRating: 4), for: .normal)
         rating5.setImage(viewLogic.getRatingImage(episodeId: episode.id, buttonRating: 5), for: .normal)
         
-        
         NotificationCenter.default.addObserver(forName: .favoritesChanged, object: nil, queue: .main) { [self] _ in
             favoriteButton.setImage(viewLogic.getFavoriteImage(episodeId: episode.id), for: .normal)
         }
@@ -74,22 +70,16 @@ final class DetailViewController: UIViewController {
             rating4.setImage(viewLogic.getRatingImage(episodeId: episode.id, buttonRating: 4), for: .normal)
             rating5.setImage(viewLogic.getRatingImage(episodeId: episode.id, buttonRating: 5), for: .normal)
         }
-        
     }
-    
     
     @IBAction func favoritePressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.toggleFavorite(id: episode.id)
-        
-        
-        
     }
 
     @IBAction func watchedPressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.toggleWatch(id: episode.id)
-        
     }
     
     @IBAction func checkPressed(_ sender: UIButton) {
@@ -99,45 +89,35 @@ final class DetailViewController: UIViewController {
     }
     
     //Ratings
-    
     @IBAction func rating1Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 1)
         
     }
-    
     @IBAction func rating2Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 2)
        
     }
-    
-    
     @IBAction func rating3Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 3)
 
     }
-    
-    
     @IBAction func rating4Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 4)
     
     }
-    
     @IBAction func rating5Pressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         modelLogic.ratingPressed(episodeId: episode.id, rating: 5)
     }
-    
-    
+
     @IBAction func externalLinkPressed(_ sender: UIButton) {
         guard let episode = selectedEpisode else { return }
         UIApplication.shared.open(episode.url)
     }
-    
-    
     
     deinit {
         NotificationCenter.default.removeObserver(self, name: .favoritesChanged, object: nil)

@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 @objc(TestingAppDelegate)
 final class TestingAppDelegate: UIResponder, UIApplicationDelegate {
 

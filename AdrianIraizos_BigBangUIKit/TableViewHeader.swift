@@ -20,5 +20,4 @@ final class TableViewHeader: UITableViewHeaderFooterView {
         seasonNumberLabel.text = nil
         seasonImage.image =  nil
     }
-    
 }

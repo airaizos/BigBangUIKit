@@ -10,7 +10,7 @@ import UIKit
 final class SeasonsTableViewController: UITableViewController,UISearchResultsUpdating {
     
     let modelLogic = ModelLogic.shared
-    let modelPersistence = ModelPersistence.shared
+    let modelPersistence = Persistence.shared
     let viewLogic = ViewLogic.shared
     
     let nameCell = "tableCell"
@@ -28,11 +28,8 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         }
     }()
     
-    
     @IBOutlet weak var WatchedButtonLabel: UIBarButtonItem!
-    
     @IBOutlet weak var CheckedButtonLabel: UIBarButtonItem!
-    
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "sectionHeader") as! TableViewHeader
@@ -56,10 +53,7 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         //Header
         let sectionHeader = UINib(nibName: "TableViewHeader", bundle: nil)
         tableView.register(sectionHeader, forHeaderFooterViewReuseIdentifier: "sectionHeader")
-        
-        
     }
-    
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let search = searchController.searchBar.text  else { return }
@@ -116,13 +110,11 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
     }
     
-    
     @IBAction func CheckedButtonPressed(_ sender: UIBarButtonItem) {
         viewLogic.checkedBarButtonPressed()
         CheckedButtonLabel.image = viewLogic.getCheckedBarButtonImage()
         dataSource.apply(modelLogic.snapshot, animatingDifferences: true)
     }
-    
     
     @IBSegueAction func showDetail(_ coder: NSCoder) -> DetailViewController? {
         let detail = DetailViewController(coder: coder)
@@ -131,6 +123,4 @@ final class SeasonsTableViewController: UITableViewController,UISearchResultsUpd
         
         return detail
     }
-    
-    
 }

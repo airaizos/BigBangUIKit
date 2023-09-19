@@ -7,29 +7,88 @@
 
 import XCTest
 
+@testable import AdrianIraizos_BigBangUIKit
 final class AdrianIraizos_BigBangUIKitTests: XCTestCase {
-
+    var paths: TestingPaths!
+    var fileManager: FileManager!
+    
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let paths = TestingPaths()
+        fileManager = FileManager.default
+        Persistence.stubbedInstance = Persistence(paths: paths)
+        
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        paths = nil
+        fileManager = nil
+        Persistence.stubbedInstance = nil
+        deleteAllFilesInTemporaryDirectory()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    //    func testExample() throws {
+    //       XCTFail("Debe fallar")
+    //    }
+    
+    func test_LoadEpisodes_ShouldBe2() throws {
+        let sut = Persistence.shared
+        
+        let episodes = try sut.loadEpisodes()
+        
+        XCTAssertEqual(episodes.count, 2)
     }
+    
+    func test_Favorites_ShouldBe5() throws {
+        let sut = Persistence.shared
+        let favoritesIds = [1,2,3,4,5]
+        
+        try sut.saveFavorites(ids: favoritesIds)
+        
+        let favorites = try sut.loadFavorites()
+        XCTAssertEqual(favorites.count, 5)
+    }
+    
+    func test_Watched_ShouldBe5() throws {
+        let sut = Persistence.shared
+        let ids = [1,2,3,4,5]
+        
+        try sut.saveWatched(ids: ids)
+        
+        let watched = try sut.loadWatched()
+        XCTAssertEqual(watched.count, 5)
+    }
+    
+    func test_Ratings_ShouldBe5() throws {
+        let sut = Persistence.shared
+        let ratings = [1:5,2:1,3:3,4:0,5:5]
+        
+        try sut.saveRatings(ratings)
+        
+        let watched = try sut.loadRatings()
+        XCTAssertEqual(watched.count, 5)
+    }
+    func test_Checked_ShouldBe5() throws {
+        let sut = Persistence.shared
+        let ids = [1,2,3,4,5]
+        
+        try sut.saveChecked(ids: ids)
+        
+        let watched = try sut.loadChecks()
+        XCTAssertEqual(watched.count, 5)
+    }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+func deleteAllFilesInTemporaryDirectory() {
+    let fileManager = FileManager.default
+    let tempDirectory = fileManager.temporaryDirectory
+    
+    do {
+        let fileList = try fileManager.contentsOfDirectory(atPath: tempDirectory.path)
+        for file in fileList {
+            let filePath = tempDirectory.appendingPathComponent(file)
+            try fileManager.removeItem(at: filePath)
         }
+    } catch {
     }
-
 }

@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 final class ViewLogic {
     static let shared = ViewLogic()
     
@@ -21,9 +20,9 @@ final class ViewLogic {
         case true: return buttonWithSymbolConfiguration(systemName: "star.circle", color: .BBTYellow!,font: font)
             
         case false: return buttonWithSymbolConfiguration(systemName: "star.slash", color: .BBTPale!)
-          
         }
     }
+    
     func getWatchedImage(episodeId:Int,font: UIFont.TextStyle = .title3) -> UIImage {
         switch modelLogic.isWatched(id: episodeId) {
         case true: return buttonWithSymbolConfiguration(systemName: "eye.circle", color: .BBTGreen!, font: font)
@@ -31,6 +30,7 @@ final class ViewLogic {
         case false: return buttonWithSymbolConfiguration(systemName: "eye.slash.circle", color: .BBTPale!)
         }
     }
+    
     func getCheckedImage(episodeId:Int, font: UIFont.TextStyle = .title3) -> UIImage {
         switch modelLogic.isCheck(id: episodeId) {
         case true: return buttonWithSymbolConfiguration(systemName: "checkmark.circle", color: .BBTBlue!, font: font)
@@ -65,7 +65,6 @@ final class ViewLogic {
         UIImage(systemName: systemName, withConfiguration: UIImage.SymbolConfiguration(font: .preferredFont(forTextStyle: .title2)).applying(UIImage.SymbolConfiguration(weight: .light)).applying(UIImage.SymbolConfiguration(paletteColors: [color, color.withAlphaComponent(0.4)])))!
      }
      
-    
     // SearchBar
     func getSearchBar() -> UISearchController {
         let search = UISearchController(searchResultsController: nil)
@@ -75,7 +74,6 @@ final class ViewLogic {
     }
     
     //MARK: BarButtons Items
-  
     func getWatchedBarButtonImage() -> UIImage {
         switch modelLogic.watchedBarButtonState {
         case .all: return UIImage(systemName: "eye.square")!
@@ -99,6 +97,7 @@ final class ViewLogic {
         case .unmarked: modelLogic.watchedBarButtonState = .all
         }
     }
+    
     func checkedBarButtonPressed() {
         switch modelLogic.checkedBarButtonState {
         case .all: modelLogic.checkedBarButtonState = .marked
@@ -106,7 +105,4 @@ final class ViewLogic {
         case .unmarked: modelLogic.checkedBarButtonState = .all
         }
     }
-    
-   
-    
 }

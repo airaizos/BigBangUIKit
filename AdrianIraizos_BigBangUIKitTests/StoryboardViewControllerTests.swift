@@ -58,7 +58,5 @@ final class StoryboardViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut.rating4Pressed(sut.rating4))
         XCTAssertNotNil(sut.rating5Pressed(sut.rating5))
         XCTAssertNotNil(sut.externalLinkPressed(sut.checkButton))
-        
     }
-    
 }

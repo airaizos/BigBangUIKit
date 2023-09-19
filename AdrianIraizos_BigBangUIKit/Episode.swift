@@ -35,7 +35,6 @@ struct Episode:Hashable, Codable {
     
 }
 
-
 struct Favorites:Codable {
     let ids:[Int]
 }

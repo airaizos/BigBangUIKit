@@ -14,7 +14,6 @@ final class FavoritesCollectionViewController: UICollectionViewController, UISea
     let modelLogic = ModelLogic.shared
     let viewLogic = ViewLogic.shared
     
-    
     lazy var dataSource: EpisodeDiffableCollectionDataSource = {
         EpisodeDiffableCollectionDataSource(collectionView: collectionView) { [self] collectionView, indexPath, episode in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? FavoritesViewCell else {  return UICollectionViewCell() }
@@ -41,7 +40,6 @@ final class FavoritesCollectionViewController: UICollectionViewController, UISea
             
             return cell
         }
-        
     }()
     
     override func viewDidLoad() {
@@ -74,9 +72,6 @@ final class FavoritesCollectionViewController: UICollectionViewController, UISea
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.collectionView.reloadData()
         }
-        
-        
-      
     }
     
     func getLayout() -> UICollectionViewCompositionalLayout {
@@ -119,8 +114,6 @@ final class FavoritesCollectionViewController: UICollectionViewController, UISea
         modelLogic.searchText = search
         dataSource.apply(modelLogic.favoritesSnapshot, animatingDifferences: true)
     }
-    
-    
     
     @IBSegueAction func showFavDetail(_ coder: NSCoder) -> DetailViewController? {
         let detail = DetailViewController(coder: coder)
