@@ -1,5 +1,7 @@
 # BigBag Episodes: UIKit Challenge
 
+Listado de episodios de la serie de televisión Big Bang Theory
+
 ## Requerimientos
 - Utilizar UIKit
 - Cargar el archivo de solo lectura BigBang.json. Los datos serán de solo lectura.
@@ -22,4 +24,8 @@
 - Se puede añadir un rating del 1 al 5
 - Tienes un enlace en el detalle del episodio para más información.
 
+![](https://github.com/airaizos/BigBangUIKit/blob/f32bb226bcb4d2d4ee0a8086de9faae1a760ca60/BigBang1.png)
+![](https://github.com/airaizos/BigBangUIKit/blob/f32bb226bcb4d2d4ee0a8086de9faae1a760ca60/BigBang2.png)
+![](https://github.com/airaizos/BigBangUIKit/blob/f32bb226bcb4d2d4ee0a8086de9faae1a760ca60/BigBang3.png)
+![](https://github.com/airaizos/BigBangUIKit/blob/f32bb226bcb4d2d4ee0a8086de9faae1a760ca60/BigBang4.png)
 
